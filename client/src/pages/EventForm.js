@@ -79,9 +79,9 @@ function FormExampleFieldControl() {
 
     <div className="form-container">
 
-      <h1 style={styles.titleStyle}>Add Your Art Event Here!</h1>
 
       <Form onSubmit={handleFormSubmit}>
+      <h1 style={styles.titleStyle}>Add Your Art Event Here!</h1>
         <Form.Group widths="equal">
           <Form.Field
             onChange={(e) => {

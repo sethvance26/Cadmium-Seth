@@ -8,6 +8,7 @@ import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
 import { Card, CardContent, CardHeader, CardMeta, Icon, Image} from 'semantic-ui-react';
 import image from "../../images/cadmium-images/logo.png"
+import style from './list.css';
 
 // const CardExampleCard = () => {
 //   return(
