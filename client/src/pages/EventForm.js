@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { useMutation } from '@apollo/client';
+import { useMutation } from "@apollo/client";
 // import Auth from '../utils/auth';
-import { ADD_EVENT } from '../utils/mutations';
-
+import { ADD_EVENT } from "../utils/mutations";
 
 import {
   Button,
@@ -16,7 +15,6 @@ import {
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
 
 const styles = {
   titleStyle: {
@@ -54,6 +52,7 @@ function FormExampleFieldControl() {
     }));
   };
   console.log(formState);
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
@@ -70,25 +69,24 @@ function FormExampleFieldControl() {
           // category: formState.category,
         },
       });
-
+      console.log('what is this', mutationResponse);
+      return mutationResponse;
+     
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
-  }
+  };
   return (
-
     <div className="form-container">
-
-      <h1 style={styles.titleStyle}>Add Your Art Event Here!</h1>
-
       <Form onSubmit={handleFormSubmit}>
+        <h1 style={styles.titleStyle}>Add Your Art Event Here!</h1>
         <Form.Group widths="equal">
           <Form.Field
             onChange={(e) => {
               handleChange(e);
             }}
             control={Input}
-            name="eventName"
+            name="name"
             label="Event Name"
             placeholder="Event Name"
           />

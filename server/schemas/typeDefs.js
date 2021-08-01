@@ -62,7 +62,7 @@ const typeDefs = gql`
     # updateList(_id: ID!): Event
     login(email: String!, password: String!): Auth
     # not sure what this should be but it will be related to adding an event with the event form?
-    addEvent(name: String!): Event
+    addEvent(name: String!, locationName: String!): Event
   }
 `;
 

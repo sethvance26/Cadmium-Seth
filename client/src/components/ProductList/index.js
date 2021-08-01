@@ -6,19 +6,26 @@ import { useQuery } from "@apollo/client";
 import { QUERY_EVENTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
-import { Card, CardContent, CardHeader, CardMeta, Icon, Image} from 'semantic-ui-react';
-import image from "../../images/cadmium-images/logo.png"
+import {
+  CardContent,
+  CardHeader,
+  CardMeta,
+  Icon,
+  Image,
+} from "semantic-ui-react";
+import image from "../../images/cadmium-images/logo.png";
+import style from "./list.css";
+import { Card, Button } from "react-bootstrap";
 
 // const CardExampleCard = () => {
 //   return(
-//   <Card>  
+//   <Card>
 //     <CardContent>
 //       <CardHeader>Event 1</CardHeader>
 //       <CardMeta>
 //         <span>description</span>
 //       </CardMeta>
 //     </CardContent>
-
 
 //   </Card>
 //   )
@@ -29,17 +36,15 @@ const styles = {
   headerStyle: {
     textAlign: "center",
     fontFamily: "Rajdhani",
-    fontSize: "50px"
+    fontSize: "50px",
   },
   listStyle: {
     listStyleType: "none",
- 
-
   },
   cardStyle: {
     display: "flex",
-    justifyContent: "center"
-  }
+    justifyContent: "center",
+  },
 };
 
 function EventList() {
@@ -52,30 +57,26 @@ function EventList() {
   return (
     <div className="my-2">
       <h2 style={styles.headerStyle}>Check out these upcoming events!</h2>
+
       {events ? (
         events.events.map(
-          ({
-            description,
-            name,
-            locationAddress,
-            locationName,
-            link,
-            
-            
-                     }) => (
-             <Card style={styles.cardStyle}>
-               {/* <Card.Img src={image}></Card.Img> */}
-            <ul style={styles.listStyle}>
-              <li>{name}</li>
-              <li>{description}</li>
-              <li>{locationName}</li>
-              <li>{locationAddress}</li>
-              <li>{link}</li>
-              
-          
-            </ul>
+          ({ description, name, locationAddress, locationName, link }) => (
+            <Card >
+              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body className="card-container">
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  <ul className="list-style">
+                    <li>{name}</li>
+                    <li>{description}</li>
+                    <li>{locationName}</li>
+                    <li>{locationAddress}</li>
+                    <li>{link}</li>
+                  </ul>
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
             </Card>
-        
           )
         )
       ) : (
@@ -83,8 +84,6 @@ function EventList() {
       )}
       {loading ? <img src={spinner} alt="loading" /> : null}
     </div>
-
-
   );
 }
 
