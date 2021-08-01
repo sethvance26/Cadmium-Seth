@@ -1,0 +1,10 @@
+.list-style{
+    list-style-type: none;
+};
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
