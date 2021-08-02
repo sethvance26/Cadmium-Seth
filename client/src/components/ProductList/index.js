@@ -7,15 +7,10 @@ import { QUERY_EVENTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
 import {
-  CardContent,
-  CardHeader,
-  CardMeta,
-  Icon,
-  Image,
+  Card,
 } from "semantic-ui-react";
 import image from "../../images/cadmium-images/logo.png";
 import style from "./list.css";
-import { Card, Button } from "react-bootstrap";
 
 // const CardExampleCard = () => {
 //   return(
@@ -31,6 +26,7 @@ import { Card, Button } from "react-bootstrap";
 //   )
 
 // }
+
 
 const styles = {
   headerStyle: {
@@ -61,22 +57,18 @@ function EventList() {
       {events ? (
         events.events.map(
           ({ description, name, locationAddress, locationName, link }) => (
-            <Card >
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body className="card-container">
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  <ul className="list-style">
-                    <li>{name}</li>
-                    <li>{description}</li>
-                    <li>{locationName}</li>
-                    <li>{locationAddress}</li>
-                    <li>{link}</li>
-                  </ul>
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+
+<Card style={{ width: '18rem' }}>
+<Card.Content>
+<Card.Header>{name}</Card.Header>
+<Card.Meta>{locationName}</Card.Meta>
+<Card.Description>{description}</Card.Description>
+</Card.Content>
+<Card.Content>
+<Card.Description>{locationAddress}</Card.Description>
+<a>{link}</a>
+</Card.Content>
+</Card>
           )
         )
       ) : (
