@@ -69,7 +69,7 @@ function EventList() {
 <Card.Description>{locationAddress}</Card.Description>
 <a href={link}>Link To Website</a>
 </Card.Content>
-<a>
+<a className="heart icon large own-class">
   <Icon name='heart' onClick="" />
   Save Event
 </a>

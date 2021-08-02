@@ -30,3 +30,6 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   
+  .own-class {
+    color: rgb(240, 13, 13);
+}
