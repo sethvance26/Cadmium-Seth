@@ -67,12 +67,22 @@ function EventList() {
 </Card.Content>
 <Card.Content>
 <Card.Description>{locationAddress}</Card.Description>
-<a href={link}>Link To Website</a>
+<br></br>
+<a href={link}>Link To Webpage</a>
 </Card.Content>
-<a className="heart icon large own-class">
+
+<a>
+  <Icon circular inverted color="blue" name='facebook icon' onClick="" />
+  <Icon circular inverted color="pink" name='instagram icon' onClick="" />
+  <Icon circular inverted color="blue" name='twitter icon' onClick="" />
+  <Icon circular inverted color="black" name='mail icon' onClick="" />
+  
+</a>
+<br></br>
+<button className="heart icon hr large own-class">
   <Icon name='heart' onClick="" />
   Save Event
-</a>
+</button>
 </Card>
 </div>
           )
