@@ -8,6 +8,7 @@ import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
 import {
   Card,
+  Icon,
 } from "semantic-ui-react";
 import image from "../../images/cadmium-images/logo.png";
 import style from "./list.css";
@@ -57,7 +58,7 @@ function EventList() {
       {events ? (
         events.events.map(
           ({ description, name, locationAddress, locationName, link }) => (
-
+<div className="card card-1">
 <Card style={{ width: '18rem' }}>
 <Card.Content>
 <Card.Header>{name}</Card.Header>
@@ -66,9 +67,14 @@ function EventList() {
 </Card.Content>
 <Card.Content>
 <Card.Description>{locationAddress}</Card.Description>
-<a>{link}</a>
+<a href={link}>Link To Website</a>
 </Card.Content>
+<a className="heart icon large own-class">
+  <Icon name='heart' onClick="" />
+  Save Event
+</a>
 </Card>
+</div>
           )
         )
       ) : (
