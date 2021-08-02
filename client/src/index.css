@@ -122,7 +122,6 @@ button {
   cursor: pointer;
   margin: 0 1px;
   background-color: var(--third);
-  
 }
 
 button:hover {
