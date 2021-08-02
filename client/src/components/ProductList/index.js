@@ -58,7 +58,7 @@ function EventList() {
       {events ? (
         events.events.map(
           ({ description, name, locationAddress, locationName, link }) => (
-
+<div className="card card-1">
 <Card style={{ width: '18rem' }}>
 <Card.Content>
 <Card.Header>{name}</Card.Header>
@@ -70,10 +70,11 @@ function EventList() {
 <a href={link}>Link To Website</a>
 </Card.Content>
 <a>
-  <Icon name='heart' />
+  <Icon name='heart' onClick="" />
   Save Event
 </a>
 </Card>
+</div>
           )
         )
       ) : (
