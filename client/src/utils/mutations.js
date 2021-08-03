@@ -14,6 +14,11 @@ export const ADD_EVENT = gql`
       locationName
       link
       locationAddress
+      imageLink
+      address2
+      state
+      zip
+      
     }
   }
 `;

@@ -38,10 +38,20 @@ const eventSchema = new Schema({
   link: {
     type: String,
   },
+  address2: {
+    type: String,
+  },
+  state: {
+    type: String,
+  },
+  zip: {
+    type: String,
+  },
+
   category: {
     type: Schema.Types.ObjectId,
     ref: "Category",
-    required: true,
+    required: false,
   },
 });
 
