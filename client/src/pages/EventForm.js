@@ -13,8 +13,8 @@ import {
   TextArea,
 } from "semantic-ui-react";
 
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+// import DatePicker from "react-datepicker";
+// import "react-datepicker/dist/react-datepicker.css";
 
 const styles = {
   titleStyle: {
@@ -57,21 +57,26 @@ function FormExampleFieldControl() {
     e.preventDefault();
 
     try {
+      console.log("form state", formState);
       const mutationResponse = await addEvent({
         variables: {
           name: formState.name,
           locationName: formState.locationName,
-          locationAddress: formState.locationAddress,
-          description: formState.description,
+          locationAddress: formState.streetAddress,
+          description: formState.eventDescription,
           link: formState.link,
+          imageLink: formState.imageLink,
+          address2: formState.address2,
+          state: formState.state,
+          zip: formState.zip,
+
           // date: formState.date,
           // imageLink: formState.imageLink,
           // category: formState.category,
         },
       });
-      console.log('what is this', mutationResponse);
+      console.log("what is this", mutationResponse);
       return mutationResponse;
-     
     } catch (err) {
       console.log(err);
     }
@@ -96,7 +101,7 @@ function FormExampleFieldControl() {
             }}
             control={Input}
             name="locationName"
-            label="Location Name"
+            // label="Location Name"
             placeholder="Location Name"
           />
           <Form.Field
@@ -157,22 +162,7 @@ function FormExampleFieldControl() {
             width={8}
           />
         </Form.Group>
-        <Form.Group>
-          <Form.Field>
-            <label>Date / Time</label>
-            <DatePicker
-              selected={formState.date}
-              onChange={(date) => {
-                setDateValue(date);
-                console.log(date);
-                handleChange({ target: { name: "date", value: date } });
-              }}
-              showTimeSelect
-              className="date-picker"
-              dateFormat="MMMM d, yyyy h:mm aa"
-            />
-          </Form.Field>
-        </Form.Group>
+
         <Form.Group>
           <Form.Input
             onChange={(e) => {

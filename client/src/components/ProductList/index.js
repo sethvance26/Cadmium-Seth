@@ -12,6 +12,13 @@ import {
 } from "semantic-ui-react";
 import image from "../../images/cadmium-images/logo.png";
 import style from "./list.css";
+import {FacebookShareButton, 
+        LinkedinShareButton,
+        EmailShareButton, 
+      TwitterShareButton,
+    PinterestShareButton, 
+  WhatsappShareButton,
+ } from "react-share";
 
 // const CardExampleCard = () => {
 //   return(
@@ -71,13 +78,15 @@ function EventList() {
 <a href={link}>Link To Webpage</a>
 </Card.Content>
 
-<a>
-  <Icon circular inverted color="blue" name='facebook icon' onClick="" />
-  <Icon circular inverted color="pink" name='instagram icon' onClick="" />
-  <Icon circular inverted color="blue" name='twitter icon' onClick="" />
-  <Icon circular inverted color="black" name='mail icon' onClick="" />
+ <a>
+   <Icon circular inverted color="blue" name='facebook icon' onClick="" />
+   <Icon circular inverted color="pink" name='instagram icon' onClick="" />
+   <Icon circular inverted color="blue" name='twitter icon' onClick="" />
+   <Icon circular inverted color="black" name='mail icon' onClick="" />
   
-</a>
+ </a>
+
+
 <br></br>
 <button className="heart icon hr large own-class">
   <Icon name='heart' onClick="" />

@@ -16,6 +16,10 @@ export const QUERY_EVENTS = gql`
     locationName
     link
     locationAddress
+    imageLink
+    address2
+    state
+    zip
 
   }
 }

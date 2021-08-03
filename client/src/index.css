@@ -34,6 +34,13 @@ body {
   
 }
 
+#root {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/57afa578c534a5bee9bbc112/1576355431596-27GX16HA4EDD0L2N1NBY/04+%281%29.JPG?format=1500w")!important ;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .list-decoration{
  list-style-type: none;
  

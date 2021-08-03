@@ -13,7 +13,6 @@ const resolvers = {
     events: async (parent) => {
       const params = {};
 
-
       // if (name) {
       //   params.name = {
       //     $regex: name,
@@ -34,8 +33,8 @@ const resolvers = {
       //     }
 
       const res = await Event.find().populate("category");
-      console.log('hello', res);
-      return res
+      console.log("hello", res);
+      return res;
     },
     event: async (parent, { _id }) => {
       return await Event.findById(_id).populate("category");
@@ -176,18 +175,21 @@ const resolvers = {
     },
 
     // I don't think this is correct, but it's a starting point?
-    addEvent: async (parent, {events}, context) => {
-      console.log(context);
+
+    //awaiting event.create(events)
+    addEvent: async (parent, { events }, context) => {
+      // console.log("context", context);
+      console.log("events", events);
 
       if (context.user) {
-        const event = new Event({event});
+        const event = await Event.create({ events });
 
         await User.findByIdAndUpdate(context.user._id, {
-          $push: {events: event},
+          $push: { events: event },
         });
 
         return event;
-      };
+      }
 
       throw new AuthenticationError(
         "User not logged in. Please log in to your account and try again."
