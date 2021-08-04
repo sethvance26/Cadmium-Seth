@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
 // import Auth from '../utils/auth';
 import { ADD_EVENT } from "../utils/mutations";
-import {useHistory} from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 import {
   Button,
@@ -14,8 +14,8 @@ import {
   TextArea,
 } from "semantic-ui-react";
 
-// import DatePicker from "react-datepicker";
-// import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const styles = {
   titleStyle: {
@@ -77,7 +77,7 @@ function FormExampleFieldControl() {
           // category: formState.category,
         },
       });
-      history.push('/events')
+      history.push("/events");
       console.log("what is this", mutationResponse);
       return mutationResponse;
     } catch (err) {
@@ -165,7 +165,22 @@ function FormExampleFieldControl() {
             width={8}
           />
         </Form.Group>
-
+        <Form.Group>
+          <Form.Field>
+            <label>Date / Time</label>
+            <DatePicker
+              selected={formState.date}
+              onChange={(date) => {
+                setDateValue(date);
+                console.log(date);
+                handleChange({ target: { name: "date", value: date } });
+              }}
+              showTimeSelect
+              className="date-picker"
+              dateFormat="MMMM d, yyyy h:mm aa"
+            />
+          </Form.Field>
+        </Form.Group>
         <Form.Group>
           <Form.Input
             onChange={(e) => {
