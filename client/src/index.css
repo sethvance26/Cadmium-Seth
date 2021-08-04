@@ -1,10 +1,10 @@
 :root {
   --primary: #232F3E;
   --secondary: #F3A847;
-  --third: #f7cf92;
+  --third: #F7CF92;
   --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: #272f32;
+  --light: #FAFAFA;
+  --dark: #272F32;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -14,14 +14,12 @@
   box-sizing: border-box;
 }
 
-html,
 html {
   min-height: 100%;
   background-image: url("https://images.squarespace-cdn.com/content/v1/57afa578c534a5bee9bbc112/1576355431596-27GX16HA4EDD0L2N1NBY/04+%281%29.JPG?format=1500w");
   background-repeat: no-repeat;
   background-size:cover;
-     };
-
+     }
 
 body {
   margin: 0;
@@ -31,7 +29,8 @@ body {
   line-height: 1.5;
   font-size: 16px;
   color: var(--dark);
-  
+  background: transparent !important;
+  opacity: .90;
 }
 
 #root {
@@ -43,7 +42,6 @@ body {
 
 .list-decoration{
  list-style-type: none;
- 
 }
 
 .date-picker{
@@ -55,9 +53,16 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 50px;
-
-  
-  
+  position: absolute;
+  margin: 20px;
+  padding: 16px;
+  background-color: #E30022;
+  max-width: 500px;
+  max-height: 800px;
+  position: relative;
+  border-radius: 20px 20px;
+  opacity: .90;
+  justify-content: center;
 }
 
 h1,
@@ -176,6 +181,9 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  background-color: #E30022;
+  opacity: .90;
+  font: serif;
 }
 
 .space-between {
@@ -196,21 +204,30 @@ input:focus {
   margin-left: var(--spacing-two);
 }
 
-.my-1 {
+.container-my-1 {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: var(--spacing-one);
   margin-bottom: var(--spacing-one);
-  position: absolute;
   margin: 20px;
-  padding: 16px;
-  background-color: red;
-  max-width: 500px;
+  padding: 26px;
+  background-color:#e30022;
+  
   max-height: 750px;
-  position: fixed;
+ 
+  border-radius: 20px 20px;
+  opacity: .90;
+  justify-content: center;
+  color: #FAFAFA;
+  right: 450px;
 }
 
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
+  justify-content: center;
 }
 
 .px-1 {
@@ -242,10 +259,23 @@ input:focus {
   color: var(--error);
 }
 
+.center {
+  display: flex;
+  justify-content: 'center';
+  align-items: 'center';
+  right: 300px;
+}
+.jumbotron {
+
+  background-color: #E30022;
+  font: serif;
+}
+
 .background {
 background-size: cover;
-opacity: 0.85;
+opacity: 0.80;
 }
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
