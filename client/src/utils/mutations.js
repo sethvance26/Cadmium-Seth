@@ -7,9 +7,9 @@ import { gql } from "@apollo/client";
 
 export const ADD_EVENT = gql`
   mutation addEvent($name: String, $description: String, $locationName: String,
-  $locationAddress: String, $imageLink: String, $link: String, $address2: String, $state: String, $zip: String) {
+  $locationAddress: String, $imageLink: String, $link: String, $address2: String, $state: String, $zip: String, $date: String) {
     addEvent(name: $name, description: $description, locationName: $locationName, locationAddress: $locationAddress,
-    link: $link, imageLink: $imageLink, address2: $address2, state: $state, zip: $zip) {
+    link: $link, imageLink: $imageLink, address2: $address2, state: $state, zip: $zip, date: $date) {
       _id
       name
       description
@@ -20,6 +20,7 @@ export const ADD_EVENT = gql`
       address2
       state
       zip
+      date
     }
   }
 `;

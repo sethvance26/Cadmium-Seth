@@ -47,6 +47,7 @@ const eventSchema = new Schema({
   zip: {
     type: String,
   },
+ 
 
   category: {
     type: Schema.Types.ObjectId,

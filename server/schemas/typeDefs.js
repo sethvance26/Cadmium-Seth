@@ -22,6 +22,7 @@ const typeDefs = gql`
     address2: String
     state: String
     zip: String
+    
   }
 
   type List {
@@ -75,6 +76,7 @@ const typeDefs = gql`
       address2: String
       state: String
       zip: String
+      date: String
     ): Event
   }
 `;

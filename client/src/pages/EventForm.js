@@ -71,10 +71,9 @@ function FormExampleFieldControl() {
           address2: formState.address2,
           state: formState.state,
           zip: formState.zip,
+          date: formState.date,
 
-          // date: formState.date,
-          // imageLink: formState.imageLink,
-          // category: formState.category,
+     //category
         },
       });
       history.push("/events");

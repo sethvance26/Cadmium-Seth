@@ -54,9 +54,9 @@ const styles = {
 function EventList() {
   const [state, dispatch] = useStoreContext();
   const { currentCategory } = state;
-  const { loading, data: events } = useQuery(QUERY_EVENTS);
-
-  console.log("data", events);
+  const { loading, data } = useQuery(QUERY_EVENTS);
+  const events = data;
+  console.log("data", data);
 
   return (
     <div className="my-2">
