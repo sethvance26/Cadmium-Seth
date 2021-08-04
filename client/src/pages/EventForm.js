@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
 // import Auth from '../utils/auth';
 import { ADD_EVENT } from "../utils/mutations";
+import {useHistory} from 'react-router-dom';
 
 import {
   Button,
@@ -40,6 +41,7 @@ const options = [
 function FormExampleFieldControl() {
   const [dateValue, setDateValue] = useState("");
   const [formState, setFormState] = useState({});
+  const history = useHistory();
   const [addEvent] = useMutation(ADD_EVENT);
 
   const handleChange = (e) => {
@@ -75,6 +77,7 @@ function FormExampleFieldControl() {
           // category: formState.category,
         },
       });
+      history.push('/events')
       console.log("what is this", mutationResponse);
       return mutationResponse;
     } catch (err) {

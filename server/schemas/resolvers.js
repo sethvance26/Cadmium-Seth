@@ -177,12 +177,12 @@ const resolvers = {
     // I don't think this is correct, but it's a starting point?
 
     //awaiting event.create(events)
-    addEvent: async (parent, { events }, context) => {
+    addEvent: async (parent, events, context) => {
       // console.log("context", context);
       console.log("events", events);
 
       if (context.user) {
-        const event = await Event.create({ events });
+        const event = await Event.create(events);
 
         await User.findByIdAndUpdate(context.user._id, {
           $push: { events: event },
