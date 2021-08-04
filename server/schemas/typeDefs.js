@@ -1,7 +1,7 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
-# category is day of the week? or type of event (artists talk, exhibit/muesum opening, etc.)
+  # category is day of the week? or type of event (artists talk, exhibit/muesum opening, etc.)
   type Category {
     _id: ID
     name: String
@@ -9,12 +9,12 @@ const typeDefs = gql`
 
   type Event {
     _id: ID
-    name: String!
+    name: String
     description: String
-    locationName: String!
-    locationAddress: String!
+    locationName: String
+    locationAddress: String
     # time: String!
-    date: String!
+    date: String
     imageLink: String
     link: String
     # type: String
@@ -65,7 +65,17 @@ const typeDefs = gql`
     # updateList(_id: ID!): Event
     login(email: String!, password: String!): Auth
     # not sure what this should be but it will be related to adding an event with the event form?
-    addEvent(name: String!, locationName: String, locationAddress: String, description: String, link: String, imageLink: String, address2: String, state: String, zip: String): Event
+    addEvent(
+      name: String
+      locationName: String
+      locationAddress: String
+      description: String
+      link: String
+      imageLink: String
+      address2: String
+      state: String
+      zip: String
+    ): Event
   }
 `;
 
