@@ -48,7 +48,7 @@ db.once('open', async () => {
       name: 'Richmond RVA Exotic Paintings: BYOB Paint & Sip',
       description:
         "Instructional painting event with live models. BYOB. Tickets sold for $35, includes 8x10 canvas, painting supplies, and instructor's guidance",
-      image: 'exotic-painting.jpeg',
+      imageLink: 'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F121454739%2F70074178483%2F1%2Foriginal.20201221-224248?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C1000&s=4bc905f16310f0dfa2c88a41b91c8fa1',
       category: categories[5]._id,
       // multiple dates, different times for different dates
       // startDate: '8pm',

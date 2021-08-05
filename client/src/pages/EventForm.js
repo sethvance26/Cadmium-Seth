@@ -22,6 +22,7 @@ const styles = {
     textAlign: "center",
     fontFamily: "Rajdhani",
     fontSize: "50px",
+    paddingBottom: "50px"
   },
   listStyle: {
     listStyleType: "none",
