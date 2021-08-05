@@ -239,11 +239,9 @@ input:focus {
   list-style-type: none;
   padding: 15px;
 }
-
 .logo-style {
-  font-size: ;
+  font-size: 10px ;
 }
-
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
