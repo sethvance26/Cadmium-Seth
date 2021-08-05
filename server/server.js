@@ -19,7 +19,6 @@ server.applyMiddleware({ app });
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use(favicon(__dirname + "/favicon.ico"));
 
 // Serve up static assets
 app.use('/images', express.static(path.join(__dirname, '../client/images')));
