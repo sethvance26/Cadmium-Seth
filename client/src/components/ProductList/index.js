@@ -6,7 +6,7 @@ import { useQuery } from "@apollo/client";
 import { QUERY_EVENTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
-import { Card, Icon } from "semantic-ui-react";
+import { Card, Icon, Image } from "semantic-ui-react";
 import image from "../../images/cadmium-images/logo.png";
 import style from "./list.css";
 import {
@@ -24,7 +24,6 @@ import {
   PinterestIcon,
   WhatsappIcon,
   RedditIcon,
- 
 } from "react-share";
 
 // const CardExampleCard = () => {
@@ -84,8 +83,8 @@ function EventList() {
           }) => (
             <div className="card card-1">
               <Card style={{ width: "18rem" }}>
-                <Card.Content>
-                <Card.Header>{name}</Card.Header>
+                   <Card.Content>
+                  <Card.Header>{name}</Card.Header>
                   <Card.Meta>{locationName}</Card.Meta>
                   <Card.Description>{description}</Card.Description>
                 </Card.Content>
@@ -94,7 +93,7 @@ function EventList() {
                   <Card.Description>{address2}</Card.Description>
                   <Card.Description>{state}</Card.Description>
                   <Card.Description>{zip}</Card.Description>
-                  <Card.Description>{imageLink}</Card.Description>
+
                   <Card.Description>{date}</Card.Description>
                   <br></br>
                   <a href={link}>Link To Event</a>
@@ -108,9 +107,9 @@ function EventList() {
                     <FacebookIcon size={30} round />
                   </FacebookShareButton>
                   <TwitterShareButton
-                  title="Check out this cool art event I found through Cadmium"
-                  url={link}
-                  hashtag="#CadmiumRVA"
+                    title="Check out this cool art event I found through Cadmium"
+                    url={link}
+                    hashtag="#CadmiumRVA"
                   >
                     <TwitterIcon size={30} round />
                   </TwitterShareButton>
@@ -122,31 +121,29 @@ function EventList() {
                   </LinkedinShareButton>
                   <PinterestShareButton
                     title="Check out this cool art event I found through Cadmium"
-                     url={link}
+                    url={link}
                   >
                     <PinterestIcon size={30} round />
                   </PinterestShareButton>
-                  <WhatsappShareButton         
-                  title="Check out this cool art event I found through Cadmium"
-                  url={link}
+                  <WhatsappShareButton
+                    title="Check out this cool art event I found through Cadmium"
+                    url={link}
                   >
                     <WhatsappIcon size={30} round />
                   </WhatsappShareButton>
                   <EmailShareButton
-                   title="Check out this cool art event I found through Cadmium"
-                   url={link}
-                   subject="Your saved events via Cadmium"
-                   
-                   >
-                     <EmailIcon size={30} round/>
-                   </EmailShareButton>
-                   <RedditShareButton
-                   title="Check out this cool art event I found through Cadmium"
-                   url={link}
-                   >
-                     <RedditIcon size={30} round />
-                   </RedditShareButton>
-                 
+                    title="Check out this cool art event I found through Cadmium"
+                    url={link}
+                    subject="Your saved events via Cadmium"
+                  >
+                    <EmailIcon size={30} round />
+                  </EmailShareButton>
+                  <RedditShareButton
+                    title="Check out this cool art event I found through Cadmium"
+                    url={link}
+                  >
+                    <RedditIcon size={30} round />
+                  </RedditShareButton>
                 </div>
 
                 <br></br>
