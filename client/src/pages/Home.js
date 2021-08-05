@@ -16,21 +16,19 @@ const Home = () => {
       <center>
         <img src={Image} alt="logo" />
       </center>
-      <div className="container-my-1">
+      <div className="container my-1 home-button">
         <center>
-          <h2>Signup</h2>
-        </center>
-        <center>
-          <Link to="/signup">← Go to Signup</Link>
+          <Link to="/signup">
+            <h2 className="home-button">Signup</h2>
+          </Link>
         </center>
       </div>
 
-      <div className="container-my-1">
+      <div className="container my-1 ">
         <center>
-          <h2>Login</h2>
-        </center>
-        <center>
-          <Link to="/login">← Go to Login</Link>
+          <Link to="login">
+            <h2 className="home-button">Login</h2>
+          </Link>
         </center>
       </div>
     </div>

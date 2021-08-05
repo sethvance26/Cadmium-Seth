@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
 
-const defaultImage = "../client/public/images/cadmium-images/cadmiumCircle.png";
+// const defaultImage = "../client/public/images/cadmium-images/cadmiumCircle.png";
 
 const eventSchema = new Schema({
   // EventForm's dateFormat="MMMM d, yyyy h:mm aa"
@@ -10,10 +10,7 @@ const eventSchema = new Schema({
   date: {
     // timestamp includes date and time
     // make sure it works with datepicker casey added in EventForm
-    type: Date,
-    default: Date.now,
-    get: (timestamp) => dateFormat(timestamp),
-    required: true,
+    type: String,
   },
   name: {
     type: String,
@@ -33,7 +30,7 @@ const eventSchema = new Schema({
   },
   imageLink: {
     type: String,
-    default: defaultImage,
+    // default: defaultImage,
   },
   link: {
     type: String,

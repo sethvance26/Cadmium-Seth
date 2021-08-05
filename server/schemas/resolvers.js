@@ -183,7 +183,7 @@ const resolvers = {
 
       if (context.user) {
         const event = await Event.create(events);
-
+console.log('new event', event)
         await User.findByIdAndUpdate(context.user._id, {
           $push: { events: event },
         });

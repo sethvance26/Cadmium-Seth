@@ -39,7 +39,7 @@ db.once('open', async () => {
       // endDate: '8pm',
       // time: '6:00 pm',
       // date: '2021-08-06',
-      date: 'Aug 6, 2021 6:00 pm', 
+      date: '8/06/2021, 6:00:00 PM', 
       link: 'https://www.eventbrite.com/e/rhythm-on-the-river-tickets-154611911389?aff=ebdssbdestsearch',
       locationName: 'Virginia Museum of Fine Arts',
       locationAddress: '200 North Arthur Ashe Boulevard, Richmond, VA 23220',
@@ -55,7 +55,7 @@ db.once('open', async () => {
       // endDate: '9:30pm',
       // time: '8:00 pm',
       // date: '2021-08-14',
-      date: 'Aug 14, 2021 8:00 pm', 
+      date: '8/14/2021, 8:00:00 PM', 
       link: 'https://www.eventbrite.com/e/richmond-rva-exotic-paintings-byob-paint-sip-tickets-52795985213?aff=ebdssbdestsearch',
       locationName: 'Venue 065',
       locationAddress: '3056 Hull Street, Richmond, VA 23224'
@@ -71,7 +71,7 @@ db.once('open', async () => {
       // endDate: '7pm',
       // time: '5:00 pm',
       // date: '2021-08-27',
-      date: 'Aug 27, 2021 5:00 pm', 
+      date: '8/27/2021, 5:00:00 PM', 
       link: 'https://www.ashlandvirginia.com/fourthfridays',
       locationName: 'Downtown Ashland, Virginia',
       locationAddress: '108 Robinson Street, Ashland, VA 23005'
@@ -86,7 +86,7 @@ db.once('open', async () => {
       // endDate: '7pm',
       // time: '5:00 pm',
       // date: '2021-08-06',
-      date: 'Aug 6, 2021 5:00 pm', 
+      date: '8/06/2021, 5:00:00 PM', 
       link: 'https://thehighpointrichmond.com/',
       locationName: 'The Highpoint',
       locationAddress: '3300 West Broad Street, Richmond, VA 23230'
@@ -102,7 +102,7 @@ db.once('open', async () => {
       // endDate: '9pm',
       // time: '6:00 pm',
       // date: '2021-09-17',
-      date: 'Sept 17, 2021 6:00 pm', 
+      date: '9/17/2021, 6:00:00 PM', 
       link: 'https://www.crossroadsartcenter.com/pages/exhibitions',
       locationName: 'Crossroads Art Center',
       locationAddress: '2016 Staples Mill Rd, Richmond, VA 23230'
@@ -118,7 +118,7 @@ db.once('open', async () => {
       // endDate: '9pm',
       // time: '6:00 pm',
       // date: '2021-11-19',
-      date: 'Nov 11, 2021 6:00 pm', 
+      date: '11/11/2021, 6:00:00 PM', 
       link: 'https://www.crossroadsartcenter.com/pages/exhibitions',
       locationName: 'Crossroads Art Center',
       locationAddress: '2016 Staples Mill Rd, Richmond, VA 23230'
@@ -134,7 +134,7 @@ db.once('open', async () => {
       // endDate: '8pm',
       // time: '6:00 pm',
       // date: '2021-08-27',
-      date: 'Aug 27, 2021 6:00 pm', 
+      date: '8/27/2021, 6:00:00 PM', 
       link: 'https://artworksrva.com/blog/events/4th-friday-art-shows-08-27-2021/',
       locationName: 'Art Works',
       locationAddress: '320 Hull St, Richmond, VA 23224'
@@ -150,7 +150,7 @@ db.once('open', async () => {
       // endDate: '8pm',
       // time: '6:00 pm',
       // date: '2021-08-27',
-      date: 'Aug 27, 2021 6:00 pm', 
+      date: '8/27/2021, 6:00:00 PM', 
       link: 'https://artworksrva.com/blog/events/james-river-renderings/', 
       locationName: 'Art Works',
       locationAddress: '320 Hull St, Richmond, VA 23224'
@@ -166,7 +166,7 @@ db.once('open', async () => {
       // endDate: '8pm',
       // time: '6:00 pm',
       // date: '2021-08-27',
-      date: 'Aug 27, 2021 6:00 pm', 
+      date: '8/27/2021, 6:00:00 PM', 
       link: 'https://artworksrva.com/blog/events/heidi-nunnally/',
       locationName: 'Art Works',
       locationAddress: '320 Hull St, Richmond, VA 23224'
@@ -181,7 +181,7 @@ db.once('open', async () => {
       // endDate: '8pm',
       // time: '6:00 pm',
       // date: '2021-08-27',
-      date: 'Aug 27, 2021 6:00 pm', 
+      date: '8/27/2021, 6:00:00 PM', 
       link: 'https://artworksrva.com/blog/events/cathy-cazares-2/',
       locationName: 'Art Works',
       locationAddress: '320 Hull St, Richmond, VA 23224'

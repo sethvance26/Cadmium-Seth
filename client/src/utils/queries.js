@@ -20,6 +20,7 @@ export const QUERY_EVENTS = gql`
     address2
     state
     zip
+    date
 
   }
 }
