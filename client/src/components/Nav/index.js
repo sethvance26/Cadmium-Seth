@@ -25,7 +25,7 @@ function Nav() {
     } else {
       return (
         <ul className="flex-row list-decoration">
-          <li className="mx-1">
+          <li className="mx-1 fix-margin">
             <Link to="/signup">Signup</Link>
           </li>
           <li className="mx-1 nav-items-style">
