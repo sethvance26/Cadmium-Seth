@@ -32,7 +32,7 @@ db.once('open', async () => {
     {
       name: 'Rhythm on the River',
       description:
-        'A celebration of the arts in the VMFA Sculpture Garden, featuring live performances (music & spoken word) and visual artists.',
+        'A celebration of the arts in the VMFA Sculpture Garden.',
       image: 'rhythm-on-the-river.jpg',
       category: categories[4]._id,
       // startDate: '6pm',
@@ -45,7 +45,7 @@ db.once('open', async () => {
       locationAddress: '200 North Arthur Ashe Boulevard, Richmond, VA 23220',
     },
     {
-      name: 'Richmond RVA Exotic Paintings: BYOB Paint & Sip',
+      name: 'Richmond RVA Exotic Paintings',
       description:
         "Instructional painting event with live models. BYOB. Tickets sold for $35, includes 8x10 canvas, painting supplies, and instructor's guidance",
       imageLink: 'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F121454739%2F70074178483%2F1%2Foriginal.20201221-224248?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1000%2C1000&s=4bc905f16310f0dfa2c88a41b91c8fa1',
@@ -80,7 +80,7 @@ db.once('open', async () => {
       name: 'Meet the Artist - Artist Talk - Chuck Scalin',
       category: categories[4]._id,
       description:
-        'Works spanning 5 decades, 1971-2021, by Chuck Scalin. Exhibition open July 10th through August 27th 2021',
+        'Works spanning 5 decades, 1971-2021, by Chuck Scalin.',
       image: 'chuck-scalin.jpg',
       // startDate: '5pm',
       // endDate: '7pm',
@@ -95,7 +95,7 @@ db.once('open', async () => {
       name: 'All Media Show Fall Opening Reception',
       category: categories[4]._id,
       description:
-        'Art, food, music, bar, and more! Exhibit runs September 17, 2021 to November 7, 2021. $12 per piece for non-members, $9 for members',
+        'Art, food, music, bar, and more! Exhibit runs September 17, 2021 to November 7, 2021.',
       // NO IMAGE
       image: 'camera.jpg',
       // startDate: '6pm',
@@ -111,7 +111,7 @@ db.once('open', async () => {
       name: 'All Media Show Winter Opening Reception',
       category: categories[4]._id,
       description:
-        'Art, food, music, bar, and more! Exhibit runs November 17, 2021 to January 9, 2022. $12 per piece for non-members, $9 for members',
+        'Art, food, music, bar, and more! Exhibit runs November 17, 2021 to January 9, 2022.',
       // NO IMAGE
       image: 'camera.jpg',
       // startDate: '6pm',
@@ -127,7 +127,7 @@ db.once('open', async () => {
       name: '4th Friday Art Shows - Dog Days of Summer Fundraiser',
       category: categories[4]._id,
       description:
-        'Opening of several exhibits: James River Renderings 2021, Death of an Iceberg, and . Dogs welcome, donations go to local animal shelters. Exhibits run through September 18, 2021',
+        'Opening of several exhibits: James River Renderings 2021, Death of an Iceberg.',
       // NO IMAGE
       image: 'camera.jpg',
       // startDate: '6pm',
@@ -159,7 +159,7 @@ db.once('open', async () => {
       name: 'Death of an Iceberg - Exhibit Opening',
       category: categories[4]._id,
       description:
-        "Opening of Heidi Nunnally's photography exhibit, which follows the path of an iceberg along the arctic currents. Exhibit runs through September 18, 2021",
+        "Opening of Heidi Nunnally's photography exhibit, which follows the path of an iceberg along the arctic currents.",
       // NO IMAGE
       image: 'camera.jpg',
       // startDate: '6pm',
@@ -174,7 +174,7 @@ db.once('open', async () => {
     {
       name: 'Faces and City Lights - Exhibit Opening',
       category: categories[4]._id,
-      description: "Opening of Cathy Cazares's exhibit, which includes photography, transfers, and pastels. Exhibit runs through September 18, 2021",
+      description: "Opening of Cathy Cazares's exhibit, which includes photography, transfers, and pastels.",
       // NO IMAGE
       image: 'camera.jpg',
       // startDate: '6pm',
