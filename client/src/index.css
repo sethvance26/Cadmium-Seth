@@ -19,6 +19,7 @@ html {
   background-image: url("https://images.squarespace-cdn.com/content/v1/57afa578c534a5bee9bbc112/1576355431596-27GX16HA4EDD0L2N1NBY/04+%281%29.JPG?format=1500w");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 body {
@@ -38,10 +39,15 @@ body {
   min-height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .list-decoration {
   list-style-type: none;
+}
+
+.form-margin-style{
+  margin-bottom: 100px;
 }
 
 .date-picker {
@@ -256,8 +262,17 @@ input:focus {
   padding: 15px;
 }
 
-.logo-style {
-  font-size: ;
+
+
+.fix-margin{
+  margin: auto;
+}
+
+.signup-button{
+ background-color: black;
+ color: white;
+ 
+
 }
 
 .my-2 {

@@ -32,7 +32,7 @@ function Signup(props) {
 
   return (
     <div className="container my-1">
-      <Link to="/login">← Go to Login</Link>
+      {/* <Link to="/login">← Go to Login</Link> */}
 
       <h2>Signup</h2>
       <form onSubmit={handleFormSubmit}>
@@ -77,7 +77,7 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+          <button type="submit" className="signup-button">Submit</button>
         </div>
         {/* <div className="flex-row flex-end">
           <button type="submit" onClick={(e) => {
