@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
@@ -7,6 +7,7 @@ import { ADD_USER } from "../utils/mutations";
 function Signup(props) {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [addUser] = useMutation(ADD_USER);
+  const history = useHistory();
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -38,7 +39,7 @@ function Signup(props) {
         <div className="flex-row space-between my-2">
           <label htmlFor="username">Username:</label>
           <input
-            placeholder="First"
+            placeholder="username"
             name="username"
             type="username"
             id="username"
@@ -78,6 +79,12 @@ function Signup(props) {
         <div className="flex-row flex-end">
           <button type="submit">Submit</button>
         </div>
+        {/* <div className="flex-row flex-end">
+          <button type="submit" onClick={(e) => {
+            history.push('./events')
+          }}
+          >Submit</button>
+        </div> */}
       </form>
     </div>
   );

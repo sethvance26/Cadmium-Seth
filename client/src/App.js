@@ -29,7 +29,6 @@ import Map from "./components/Map/Map";
 import background from "../src/images/GalleryImage2.jpg";
 import EventList from "./components/ProductList/index";
 
-
 const httpLink = createHttpLink({
   uri: "/graphql",
 });

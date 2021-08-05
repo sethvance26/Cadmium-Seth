@@ -6,19 +6,26 @@ import { useQuery } from "@apollo/client";
 import { QUERY_EVENTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
-import {
-  Card,
-  Icon,
-} from "semantic-ui-react";
+import { Card, Icon } from "semantic-ui-react";
 import image from "../../images/cadmium-images/logo.png";
 import style from "./list.css";
-import {FacebookShareButton, 
-        LinkedinShareButton,
-        EmailShareButton, 
-      TwitterShareButton,
-    PinterestShareButton, 
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  EmailShareButton,
+  TwitterShareButton,
+  PinterestShareButton,
   WhatsappShareButton,
- } from "react-share";
+  RedditShareButton,
+  FacebookIcon,
+  LinkedinIcon,
+  EmailIcon,
+  TwitterIcon,
+  PinterestIcon,
+  WhatsappIcon,
+  RedditIcon,
+ 
+} from "react-share";
 
 // const CardExampleCard = () => {
 //   return(
@@ -34,7 +41,6 @@ import {FacebookShareButton,
 //   )
 
 // }
-
 
 const styles = {
   headerStyle: {
@@ -59,41 +65,97 @@ function EventList() {
   console.log("data", data);
 
   return (
-    <div className="my-2">
+    <div className="evt-cards">
       <h2 style={styles.headerStyle}>Check out these upcoming events!</h2>
 
       {events ? (
         events.events.map(
-          ({ description, name, locationAddress, locationName, link }) => (
-<div className="card card-1">
-<Card style={{ width: '18rem' }}>
-<Card.Content>
-<Card.Header>{name}</Card.Header>
-<Card.Meta>{locationName}</Card.Meta>
-<Card.Description>{description}</Card.Description>
-</Card.Content>
-<Card.Content>
-<Card.Description>{locationAddress}</Card.Description>
-<br></br>
-<a href={link}>Link To Webpage</a>
-</Card.Content>
+          ({
+            description,
+            name,
+            locationAddress,
+            locationName,
+            link,
+            imageLink,
+            address2,
+            state,
+            zip,
+            date,
+          }) => (
+            <div className="card card-1">
+              <Card style={{ width: "18rem" }}>
+                <Card.Content>
+                <Card.Header>{name}</Card.Header>
+                  <Card.Meta>{locationName}</Card.Meta>
+                  <Card.Description>{description}</Card.Description>
+                </Card.Content>
+                <Card.Content>
+                  <Card.Description>{locationAddress}</Card.Description>
+                  <Card.Description>{address2}</Card.Description>
+                  <Card.Description>{state}</Card.Description>
+                  <Card.Description>{zip}</Card.Description>
+                  <Card.Description>{imageLink}</Card.Description>
+                  <Card.Description>{date}</Card.Description>
+                  <br></br>
+                  <a href={link}>Link To Event</a>
+                </Card.Content>
+                <div>
+                  <FacebookShareButton
+                    quote="Check out this cool art event I found through Cadmium!"
+                    url={link}
+                    hashtag="#CadmiumRVA"
+                  >
+                    <FacebookIcon size={30} round />
+                  </FacebookShareButton>
+                  <TwitterShareButton
+                  title="Check out this cool art event I found through Cadmium"
+                  url={link}
+                  hashtag="#CadmiumRVA"
+                  >
+                    <TwitterIcon size={30} round />
+                  </TwitterShareButton>
+                  <LinkedinShareButton
+                    title="Check out this cool art event I found through Cadmium"
+                    url={link}
+                  >
+                    <LinkedinIcon size={30} round />
+                  </LinkedinShareButton>
+                  <PinterestShareButton
+                    title="Check out this cool art event I found through Cadmium"
+                     url={link}
+                  >
+                    <PinterestIcon size={30} round />
+                  </PinterestShareButton>
+                  <WhatsappShareButton         
+                  title="Check out this cool art event I found through Cadmium"
+                  url={link}
+                  >
+                    <WhatsappIcon size={30} round />
+                  </WhatsappShareButton>
+                  <EmailShareButton
+                   title="Check out this cool art event I found through Cadmium"
+                   url={link}
+                   subject="Your saved events via Cadmium"
+                   
+                   >
+                     <EmailIcon size={30} round/>
+                   </EmailShareButton>
+                   <RedditShareButton
+                   title="Check out this cool art event I found through Cadmium"
+                   url={link}
+                   >
+                     <RedditIcon size={30} round />
+                   </RedditShareButton>
+                 
+                </div>
 
- <a>
-   <Icon circular inverted color="blue" name='facebook icon' onClick="" />
-   <Icon circular inverted color="pink" name='instagram icon' onClick="" />
-   <Icon circular inverted color="blue" name='twitter icon' onClick="" />
-   <Icon circular inverted color="black" name='mail icon' onClick="" />
-  
- </a>
-
-
-<br></br>
-<button className="heart icon hr large own-class">
-  <Icon name='heart' onClick="" />
-  Save Event
-</button>
-</Card>
-</div>
+                <br></br>
+                <button className="heart icon hr large own-class">
+                  <Icon name="heart" onClick="" />
+                  Save Event
+                </button>
+              </Card>
+            </div>
           )
         )
       ) : (

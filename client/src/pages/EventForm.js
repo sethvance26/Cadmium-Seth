@@ -60,6 +60,7 @@ function FormExampleFieldControl() {
 
     try {
       console.log("form state", formState);
+      const date = formState.date.toLocaleString();
       const mutationResponse = await addEvent({
         variables: {
           name: formState.name,
@@ -71,9 +72,9 @@ function FormExampleFieldControl() {
           address2: formState.address2,
           state: formState.state,
           zip: formState.zip,
-          date: formState.date,
+          date,
 
-     //category
+          //category
         },
       });
       history.push("/events");
@@ -87,7 +88,7 @@ function FormExampleFieldControl() {
     <div className="form-container">
       <Form onSubmit={handleFormSubmit}>
         <h1 style={styles.titleStyle}>Add Your Art Event Here!</h1>
-        <Form.Group widths="equal">
+        <Form.Group widths="equal" className="form-text">
           <Form.Field
             onChange={(e) => {
               handleChange(e);
@@ -96,6 +97,7 @@ function FormExampleFieldControl() {
             name="name"
             label="Event Name"
             placeholder="Event Name"
+            
           />
           <Form.Field
             onChange={(e) => {
@@ -103,7 +105,7 @@ function FormExampleFieldControl() {
             }}
             control={Input}
             name="locationName"
-            // label="Location Name"
+            label="Location Name"
             placeholder="Location Name"
           />
           <Form.Field
@@ -115,6 +117,7 @@ function FormExampleFieldControl() {
             label="Event Type"
             options={options}
             placeholder="Event Type"
+            className="form-text"
           />
         </Form.Group>
         <Form.Group>
@@ -123,17 +126,16 @@ function FormExampleFieldControl() {
               handleChange(e);
             }}
             name="streetAddress"
-            label="Street address"
+            label="Street"
             placeholder="Enter a Location"
-            width={10}
+            width={15}
           />
           <Form.Input
             onChange={(e) => {
               handleChange(e);
             }}
             name="address2"
-            label="Address 2"
-            // placeholder="Building, Suite or Apt. Number"
+            label="Address"
             width={8}
           />
           <Form.Input
@@ -143,7 +145,7 @@ function FormExampleFieldControl() {
             name="city"
             label="City"
             placeholder="City"
-            width={8}
+            width={15}
           />
           <Form.Input
             onChange={(e) => {
@@ -152,7 +154,7 @@ function FormExampleFieldControl() {
             name="state"
             label="State"
             placeholder="State"
-            width={8}
+            width={10}
           />
           <Form.Input
             onChange={(e) => {
@@ -161,7 +163,7 @@ function FormExampleFieldControl() {
             name="zip"
             label="Zip"
             placeholder="Zip"
-            width={8}
+            width={10}
           />
         </Form.Group>
         <Form.Group>
@@ -176,7 +178,7 @@ function FormExampleFieldControl() {
               }}
               showTimeSelect
               className="date-picker"
-              dateFormat="MMMM d, yyyy h:mm aa"
+              dateFormat="MMMM d, yyyy h:mm"
             />
           </Form.Field>
         </Form.Group>
