@@ -1,7 +1,7 @@
 {
   "name": "cadmium-rva",
   "version": "1.0.0",
-  "description": "Find art events in the city of Richmond!",
+  "description": "Find Art events in the city of Richmond!",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -19,7 +19,7 @@
   "dependencies": {
     "bootstrap": "^5.0.2",
     "dotenv": "^10.0.0",
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "graphql": "^15.5.1",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-map-gl": "^6.1.16",

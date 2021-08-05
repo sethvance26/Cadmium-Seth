@@ -22,7 +22,7 @@ const styles = {
     textAlign: "center",
     fontFamily: "Rajdhani",
     fontSize: "50px",
-    paddingBottom: "50px"
+    paddingBottom: "50px",
   },
   listStyle: {
     listStyleType: "none",
@@ -88,135 +88,136 @@ function FormExampleFieldControl() {
   return (
     <div className="form-container">
       <Form onSubmit={handleFormSubmit}>
-        <h1 style={styles.titleStyle}>Add Your Art Event Here!</h1>
-        <Form.Group widths="equal" className="form-text">
-          <Form.Field
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            control={Input}
-            name="name"
-            label="Event Name"
-            placeholder="Event Name"
-            
-          />
-          <Form.Field
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            control={Input}
-            name="locationName"
-            label="Location Name"
-            placeholder="Location Name"
-          />
-          <Form.Field
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            name="eventType"
-            control={Select}
-            label="Event Type"
-            options={options}
-            placeholder="Event Type"
-            className="form-text"
-          />
-        </Form.Group>
-        <Form.Group>
-          <Form.Input
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            name="streetAddress"
-            label="Street"
-            placeholder="Enter a Location"
-            width={15}
-          />
-          <Form.Input
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            name="address2"
-            label="Address"
-            width={8}
-          />
-          <Form.Input
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            name="city"
-            label="City"
-            placeholder="City"
-            width={15}
-          />
-          <Form.Input
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            name="state"
-            label="State"
-            placeholder="State"
-            width={10}
-          />
-          <Form.Input
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            name="zip"
-            label="Zip"
-            placeholder="Zip"
-            width={10}
-          />
-        </Form.Group>
-        <Form.Group>
-          <Form.Field>
-            <label>Date / Time</label>
-            <DatePicker
-              selected={formState.date}
-              onChange={(date) => {
-                setDateValue(date);
-                console.log(date);
-                handleChange({ target: { name: "date", value: date } });
+        <div  className="form-margin-style">
+          <h1 style={styles.titleStyle}>Add Your Art Event Here!</h1>
+          <Form.Group widths="equal" className="form-text">
+            <Form.Field
+              onChange={(e) => {
+                handleChange(e);
               }}
-              showTimeSelect
-              className="date-picker"
-              dateFormat="MMMM d, yyyy h:mm"
+              control={Input}
+              name="name"
+              label="Event Name"
+              placeholder="Event Name"
             />
+            <Form.Field
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              control={Input}
+              name="locationName"
+              label="Location Name"
+              placeholder="Location Name"
+            />
+            <Form.Field
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              name="eventType"
+              control={Select}
+              label="Event Type"
+              options={options}
+              placeholder="Event Type"
+              className="form-text"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Input
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              name="streetAddress"
+              label="Street"
+              placeholder="Enter a Location"
+              width={15}
+            />
+            <Form.Input
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              name="address2"
+              label="Address"
+              width={8}
+            />
+            <Form.Input
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              name="city"
+              label="City"
+              placeholder="City"
+              width={15}
+            />
+            <Form.Input
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              name="state"
+              label="State"
+              placeholder="State"
+              width={10}
+            />
+            <Form.Input
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              name="zip"
+              label="Zip"
+              placeholder="Zip"
+              width={10}
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Field>
+              <label>Date / Time</label>
+              <DatePicker
+                selected={formState.date}
+                onChange={(date) => {
+                  setDateValue(date);
+                  console.log(date);
+                  handleChange({ target: { name: "date", value: date } });
+                }}
+                showTimeSelect
+                className="date-picker"
+                dateFormat="MMMM d, yyyy h:mm"
+              />
+            </Form.Field>
+          </Form.Group>
+          <Form.Group>
+            <Form.Input
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              name="link"
+              label="Link"
+              placeholder="Link"
+              width={12}
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Input
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              name="imageLink"
+              label="Image Link"
+              placeholder="Image Link"
+              width={12}
+            />
+          </Form.Group>
+          <Form.Field
+            onChange={(e) => {
+              handleChange(e);
+            }}
+            name="eventDescription"
+            control={TextArea}
+            label="Event Description"
+            placeholder="Tell us more about your event..."
+          />
+          <Form.Field control={Button} type="submit">
+            Submit
           </Form.Field>
-        </Form.Group>
-        <Form.Group>
-          <Form.Input
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            name="link"
-            label="Link"
-            placeholder="Link"
-            width={12}
-          />
-        </Form.Group>
-        <Form.Group>
-          <Form.Input
-            onChange={(e) => {
-              handleChange(e);
-            }}
-            name="imageLink"
-            label="Image Link"
-            placeholder="Image Link"
-            width={12}
-          />
-        </Form.Group>
-        <Form.Field
-          onChange={(e) => {
-            handleChange(e);
-          }}
-          name="eventDescription"
-          control={TextArea}
-          label="Event Description"
-          placeholder="Tell us more about your event..."
-        />
-        <Form.Field control={Button} type="submit">
-          Submit
-        </Form.Field>
+        </div>
       </Form>
     </div>
   );
