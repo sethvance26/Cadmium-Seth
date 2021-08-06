@@ -100,23 +100,23 @@ The following photos provide a mock-up of the application:
 
 <!-- These are just a starter - we can change as we like of course -->
 
-1. Landing Page
-   ![Landing page prompts user to login or signup]()
-2. Login Page
-   ![Login page prompts return users to enter their email and password associated with the account ]()
-3. Signup Page
-   ![Signup page prompts user to login or signup]()
-4. Homepage
-   ![Homepage shows navigation bar and all events on database]()
-   ![Homepage shows all events on database]()
+1. Home Page
+   ![Landing page prompts user to login or signup](./client/src/images/Cadmium_Homepage.png)
+
+2. Signup Page
+   ![Signup page prompts user to login or signup](./client/src/images/Cadmium_Signup.png)
+
 5. Add event page
-   ![Add event page prompts user to add event title, date, time, location name, location address, and gives the option to add an image link and an event link]()
+   ![Add event page prompts user to add event title, date, time, location name, location address, and gives the option to add an image link and an event link](./client/src/images/Cadmium_Form.png)
+4. Events page
+   ![Homepage shows navigation bar and all events on database]()
+   ![Homepage shows all events on database](./client/src/images/Cadmium_Events.png)
 
 ## Heroku Link
 
 The following link leads to the deployed application on Heroku:
 
-[Heroku Link]()
+[Heroku Link](https://cadmiumrva.herokuapp.com/)
 
 ## Usage
 
