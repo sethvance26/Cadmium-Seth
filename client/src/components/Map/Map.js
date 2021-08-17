@@ -16,12 +16,17 @@ function Map() {
   console.log("map", process.env.REACT_APP_MAPBOX_ACCESS_TOKEN);
 
   return (
+    <div className="map">
     <ReactMapGL
       {...viewport}
       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
     />
+    </div>
   );
 }
 
 export default Map;
+
+
+

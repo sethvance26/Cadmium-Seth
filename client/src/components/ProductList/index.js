@@ -7,7 +7,7 @@ import { QUERY_EVENTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
 import { Card, Icon, Image } from "semantic-ui-react";
-import image from "../../images/cadmium-images/logo.png";
+// import image from "../../images/cadmium-images/logo.png";
 import style from "./list.css";
 import {
   FacebookShareButton,
@@ -75,6 +75,7 @@ function EventList() {
             locationAddress,
             locationName,
             link,
+            image,
             imageLink,
             address2,
             state,
@@ -82,8 +83,9 @@ function EventList() {
             date,
           }) => (
             <div className="card card-1">
+              <Image src={imageLink} className="card-image" />
               <Card style={{ width: "18rem" }}>
-                   <Card.Content>
+                <Card.Content>
                   <Card.Header>{name}</Card.Header>
                   <Card.Meta>{locationName}</Card.Meta>
                   <Card.Description>{description}</Card.Description>
