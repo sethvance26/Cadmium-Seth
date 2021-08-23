@@ -85,7 +85,7 @@ function EventList() {
             <div className="card card-1">
               <Card style={{ width: "18rem" }}>
                 <Card.Content>
-                  <Card.Header href={link}>{name}</Card.Header>
+                  <Card.Header href={link} target="_blank">{name}</Card.Header>
                   <Card.Meta>{locationName}</Card.Meta>
                   <Image src={imageLink} className="medium card-image" />
                   <Card.Description>{description}</Card.Description>
