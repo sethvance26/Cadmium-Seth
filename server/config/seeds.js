@@ -35,6 +35,18 @@ db.once("open", async () => {
 
   const events = await Event.insertMany([
     {
+      name: "Jess Perlitz - Being Carrier Bag",
+      category: categories[2]._id,
+      description:
+        "Drawing on Ursula K. Le Guin's 1986 essay, The Carrier Bag Theory of Fiction, Perlitz explors the forms of the body as narrative.",
+      imageLink:
+        "https://images.squarespace-cdn.com/content/v1/533dc02de4b0e277ef5c5244/1592944521512-I7QB3Z2Z42CFHGW2OBMK/barely+there_thumbnail.jpg?format=500w",
+      date: "9/3/2021, 5:00:00 PM",
+      link: "https://arts.vcu.edu/event/jess-perlitz-being-carrier-bag/",
+      locationName: "The Anderson Gallery",
+      locationAddress: "907 1/2 Franklin Street, Richmond, VA 23220",
+    },
+    {
       name: "Paint Night w/ artist",
       category: categories[2]._id,
       description:
@@ -112,6 +124,56 @@ db.once("open", async () => {
       locationAddress: "2908 West Cary Street, Richmond, VA 23221",
     },
     {
+      name: "Blossom: Sakura Miyazaki",
+      category: categories[3]._id,
+      description:
+        "Blossom is a world of self reflection and self actualization, with hand painted mirrors and a crafted atmosphere.",
+      imageLink:
+        "https://images.squarespace-cdn.com/content/v1/5e63fae024473b53ae219502/1629204545974-U11Q3BMEND8NTQKAX98D/hi+mirror.jpeg?format=1500w",
+      date: "8/27/2021, 6:00:00 PM",
+      link: "https://edenairlines.com/upcoming-exhibition",
+      locationName: "Eden Airlines",
+      locationAddress: "214 E Grace Street, Richmond, VA 23219",
+    },
+    {
+      name: "Art n' Flow: Black Art Showcase",
+      category: categories[4]._id,
+      description:
+        "Enjoy live art, music, and performances 3-7pm in this celebration of local artists.",
+      imageLink:
+        "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F143525319%2F209943078851%2F1%2Foriginal.20210804-020616?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C68%2C560%2C280&s=d09491fee48bfa00cfec239313f8291c",
+      // alternative imageLink: 'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F143525223%2F209943078851%2F1%2Foriginal.20210804-021147?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=1b0c189339ae53c3fecd1f5b78d913ac',
+      date: "9/04/2021, 3:00:00 PM",
+      link: "https://www.eventbrite.com/e/art-n-flow-black-art-showcase-tickets-166006775735?aff=ebdssbdestsearch",
+      locationName: "Delta Hotel",
+      locationAddress: "555 East Canal Street, Richmond, VA 23219",
+    },
+    {
+      name: "Open Figure Drawing Sessions",
+      category: categories[2]._id,
+      description:
+        "RVA Thriving Artists hosts a figure drawing session at Art Works 1-4pm. Bring your own easel and drawing materials. $10 to cover model's fee.",
+      imageLink:
+        "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F136679989%2F545513438723%2F1%2Foriginal.20210526-160035?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=4816defb9361d728ba19a6330a794cb0",
+      date: "9/05/2021, 1:00:00 PM",
+      link: "https://www.eventbrite.com/e/open-figure-drawing-sessions-september-2021-tickets-163724569595?aff=ebdssbdestsearch",
+      locationName: "Art Works",
+      locationAddress: "320 Hull St, Richmond, VA 23224",
+    },
+    {
+      name: "Nancy Blum & Joseph Scheer",
+      category: categories[2]._id,
+      description:
+        "A two-person exhibition presenting the works of Nancy Blum and Joseph Sheer.",
+      imageLink:
+        "https://www.reynoldsgallery.com/wp-content/uploads/2021/08/JSC.1024.jpg",
+      date: "9/10/2021, 5:00:00 PM",
+      link: "https://www.reynoldsgallery.com/homepagesecondary/in-front-of-nature-2-2/",
+      locationName: "Reynolds Gallery",
+      locationAddress: "1514 West Main Street, Richmond, VA 23220",
+    },
+
+    {
       name: "Death of an Iceberg - Exhibit Opening",
       category: categories[0]._id,
       description:
@@ -126,6 +188,70 @@ db.once("open", async () => {
       link: "https://www.crossroadsartcenter.com/pages/exhibitions",
       locationName: "Crossroads Art Center",
       locationAddress: "2016 Staples Mill Rd, Richmond, VA 23230",
+    },
+    {
+      name: "All Media Show Fall Opening Reception",
+      category: categories[0]._id,
+      description:
+        "Art, food, music, bar, and more! Exhibit runs September 17, 2021 to November 7, 2021.",
+      imageLink:
+        "https://images.freeimages.com/images/large-previews/144/artist-palette-1172306.jpg",
+      // startDate: '6pm',
+      // endDate: '9pm',
+      // time: '6:00 pm',
+      // date: '2021-09-17',
+      date: "9/17/2021, 6:00:00 PM",
+      link: "https://www.crossroadsartcenter.com/pages/exhibitions",
+      locationName: "Crossroads Art Center",
+      locationAddress: "2016 Staples Mill Rd, Richmond, VA 23230",
+    },
+    {
+      name: "Ansel Adams: Compositions in Nature",
+      category: categories[0]._id,
+      description:
+        "Behold the drama an splendor of the American landscape as seen through the lens of photographer Ansel Adams.",
+      imageLink:
+        "https://www.vmfa.museum/exhibitions/wp-content/uploads/sites/7/2020/03/AAWilliamson.jpg",
+      // startDate: '6pm',
+      // endDate: '9pm',
+      // time: '6:00 pm',
+      // date: '2021-09-17',
+      date: "9/25/2021, 6:00:00 PM",
+      link: "https://www.vmfa.museum/exhibitions/exhibitions/ansel-adams-compositions-nature/",
+      locationName: "Virginia Museum of Fine Arts",
+      locationAddress: "200 N Arthur Ashe Blvd, Richmond, VA 23230",
+    },
+    {
+      name: "Kutunza Kila Mmoja: Taking Care of Each Other",
+      category: categories[0]._id,
+      description:
+        "Located in the Soul N' Vinegar cafe space, this exhibit celebrates artist Burkura Nyandwi and Milk River Arts. ",
+      imageLink:
+        "https://images.squarespace-cdn.com/content/v1/5cd9594865019f8d8cbb8982/1600710308338-0OF1R9YQNVB3B2YHSZ7I/immigrationofficebukuru002.jpg?format=2500w",
+      // startDate: '6pm',
+      // endDate: '9pm',
+      // time: '6:00 pm',
+      // date: '2021-09-17',
+      date: "10/10/2021, 6:00:00 PM",
+      link: "https://icavcu.org/exhibitions/kutunza-kila-mmoja-taking-care-of-each-other/",
+      locationName: "Institute for Contemporary Art",
+      locationAddress: "601 W Broad Street, Richmond, VA 23230",
+    },
+    {
+      name: "Man Ray: The Paris Years",
+      category: categories[0]._id,
+      description:
+        "This exhibit focuses on the portrait photographs that artist Man Ray made in Paris, 1921-1940. ",
+      imageLink:
+        "https://www.vmfa.museum/exhibitions/wp-content/uploads/sites/7/2021/03/man-ray-slider.png",
+      // startDate: '6pm',
+      // endDate: '9pm',
+      // time: '6:00 pm',
+      // date: '2021-09-17',
+      date: "10/30/2021, 6:00:00 PM",
+      link: "https://www.vmfa.museum/exhibitions/exhibitions/man-ray-paris-years/",
+      locationName: "Virginia Museum of Fine Arts",
+      locationAddress: "200 N Arthur Ashe Blvd, Richmond, VA 23230",
     },
     {
       name: "Faces and City Lights - Exhibit Opening",
@@ -154,73 +280,6 @@ db.once("open", async () => {
       link: "https://www.eventbrite.com/e/richmond-rva-exotic-paintings-byob-paint-sip-tickets-52795985213?aff=ebdssbdestsearch",
       locationName: "Venue 065",
       locationAddress: "3056 Hull Street, Richmond, VA 23224",
-    },
-
-    {
-      name: "'Sirena's Gallery' Film Screening",
-      category: categories[3]._id,
-      description:
-        "Live feature film screening about a Salvadoran-American woman and her difficulties as a gallery owner whose husband took his own life.",
-      imageLink:
-        "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F136118449%2F195910722160%2F1%2Foriginal.20210521-024754?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C77%2C2556%2C1278&s=d942db5d9a26a036c071e7a1a7ab488f",
-      date: "8/27/2021, 7:00:00 PM",
-      link: "https://www.eventbrite.com/e/sirenas-gallery-feature-film-screening-at-the-byrd-theatre-tickets-156194946289?aff=ebdssbdestsearch",
-      locationName: "The Byrd Theatre",
-      locationAddress: "2908 West Cary Street, Richmond, VA 23221",
-    },
-    {
-      name: "Art n' Flow: Black Art Showcase",
-      category: categories[4]._id,
-      description:
-        "Enjoy live art, music, and performances 3-7pm in this celebration of local artists.",
-      imageLink:
-        "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F143525319%2F209943078851%2F1%2Foriginal.20210804-020616?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C68%2C560%2C280&s=d09491fee48bfa00cfec239313f8291c",
-      // alternative imageLink: 'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F143525223%2F209943078851%2F1%2Foriginal.20210804-021147?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=1b0c189339ae53c3fecd1f5b78d913ac',
-      date: "9/04/2021, 3:00:00 PM",
-      link: "https://www.eventbrite.com/e/art-n-flow-black-art-showcase-tickets-166006775735?aff=ebdssbdestsearch",
-      locationName: "Delta Hotel",
-      locationAddress: "555 East Canal Street, Richmond, VA 23219",
-    },
-    {
-      name: "Open Figure Drawing Sessions",
-      category: categories[2]._id,
-      description:
-        "RVA Thriving Artists hosts a figure drawing session at Art Works 1-4pm. Bring your own easel and drawing materials. $10 to cover model's fee.",
-      imageLink:
-        "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F136679989%2F545513438723%2F1%2Foriginal.20210526-160035?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=4816defb9361d728ba19a6330a794cb0",
-      date: "9/05/2021, 1:00:00 PM",
-      link: "https://www.eventbrite.com/e/open-figure-drawing-sessions-september-2021-tickets-163724569595?aff=ebdssbdestsearch",
-      locationName: "Art Works",
-      locationAddress: "320 Hull St, Richmond, VA 23224",
-    },
-    {
-      name: "Richmond RVA Exotic Paintings",
-      category: categories[2]._id,
-      description:
-        "Instructional painting event with live models. BYOB. Tickets sold for $35, includes 8x10 canvas, painting supplies.",
-      imageLink:
-        "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F108746661%2F70074178483%2F1%2Foriginal.20200817-105025?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C179%2C524%2C262&s=6e28dbc1944d4fd541030ac8ea4a0db2",
-      date: "9/12/2021, 7:00:00 PM",
-      link: "https://www.eventbrite.com/e/richmond-rva-exotic-paintings-byob-paint-sip-tickets-52795985213?aff=ebdssbdestsearch",
-      locationName: "Venue 065",
-      locationAddress: "3056 Hull Street, Richmond, VA 23224",
-    },
-
-    {
-      name: "All Media Show Fall Opening Reception",
-      category: categories[0]._id,
-      description:
-        "Art, food, music, bar, and more! Exhibit runs September 17, 2021 to November 7, 2021.",
-      imageLink:
-        "https://images.freeimages.com/images/large-previews/144/artist-palette-1172306.jpg",
-      // startDate: '6pm',
-      // endDate: '9pm',
-      // time: '6:00 pm',
-      // date: '2021-09-17',
-      date: "9/17/2021, 6:00:00 PM",
-      link: "https://www.crossroadsartcenter.com/pages/exhibitions",
-      locationName: "Crossroads Art Center",
-      locationAddress: "2016 Staples Mill Rd, Richmond, VA 23230",
     },
   ]);
 
