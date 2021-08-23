@@ -83,11 +83,11 @@ function EventList() {
             date,
           }) => (
             <div className="card card-1">
-              <Image src={imageLink} className="card-image" />
               <Card style={{ width: "18rem" }}>
                 <Card.Content>
-                  <Card.Header>{name}</Card.Header>
+                  <Card.Header href={link}>{name}</Card.Header>
                   <Card.Meta>{locationName}</Card.Meta>
+                  <Image src={imageLink} className="medium card-image" />
                   <Card.Description>{description}</Card.Description>
                 </Card.Content>
                 <Card.Content>
@@ -98,7 +98,7 @@ function EventList() {
 
                   <Card.Description>{date}</Card.Description>
                   <br></br>
-                  <a href={link}>Link To Event</a>
+                  {/* <a href={link}>Link To Event</a> */}
                 </Card.Content>
                 <div>
                   <FacebookShareButton

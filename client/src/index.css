@@ -82,6 +82,7 @@ body {
   justify-content: center;
   color: white;
   right: -330px;
+  padding-bottom: 800px;
 
 }
 
@@ -334,9 +335,11 @@ input:focus {
 }
 
 .card-image{
-  width: 50%;
-
-  /* height: 100%; */
+  /* /* width: 50% !important; */
+  /* height: 50% !important;  */
+width: 222px !important;
+height: 142.14px !important;
+  /* height: 100%;  */
   /* display: flex;
   align-items: center;
   justify-content: center;
