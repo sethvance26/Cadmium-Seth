@@ -46,7 +46,7 @@ db.once('open', async () => {
       locationAddress: '1420 North Parham Road, Henrico, VA 23229'
     },
     {
-      name: 'Asland Fourth Fridays',
+      name: 'Ashland Fourth Fridays',
       category: categories[4]._id,
       description:
         'Exhibits the work of jewelers, painters, designers, entertainers, chefs, farmers, and musicians',

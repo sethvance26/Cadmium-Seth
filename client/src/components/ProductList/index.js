@@ -82,7 +82,7 @@ function EventList() {
             zip,
             date,
           }) => (
-            <div className="card card-1">
+            <div className="card">
               <Image src={imageLink} className="card-image" />
               <Card style={{ width: "18rem" }}>
                 <Card.Content>
