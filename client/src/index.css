@@ -46,8 +46,6 @@ body {
   list-style-type: none;
 }
 
-
-
 .date-picker {
   width: 200px;
 }
@@ -59,16 +57,13 @@ body {
 
 .form-group-sm {
   width: 100%;
-
-
 }
 .form-control {
   width: 100%;
 }
 
-
 .form-container {
-  margin-top: 75px;
+  /* margin-top: 75px;
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -85,6 +80,8 @@ body {
   padding-bottom: 800px;
 
 }
+
+
 
 .sign-in-buttons{
   display: flex;
@@ -337,15 +334,14 @@ input:focus {
 .card-image{
   /* /* width: 50% !important; */
   /* height: 50% !important;  */
-width: 222px !important;
-height: 142.14px !important;
+  width: 222px !important;
+  height: 142.14px !important;
   /* height: 100%;  */
   /* display: flex;
   align-items: center;
   justify-content: center;
   background-color: #7a7374;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
-
 }
 
 .error-text {

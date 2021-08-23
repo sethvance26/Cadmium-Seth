@@ -35,7 +35,7 @@ db.once("open", async () => {
 
   const events = await Event.insertMany([
     {
-      name: 'Paint Night w/ artist',
+      name: "Paint Night w/ artist",
       category: categories[2]._id,
       description:
         "Enjoy being guided through one of three picture options available while you laugh and drink with friends.",
@@ -77,7 +77,7 @@ db.once("open", async () => {
       // time: '6:00 pm',
       // date: '2021-08-27',
       date: "8/27/2021, 6:00:00 PM",
-      link: "https://artworksrva.com/blog/events/4th-friday-art-shows-08-27-2021/",
+      link: "https://artworksrva.com/blog/events/heidi-nunnally/",
       locationName: "Art Works",
       locationAddress: "320 Hull St, Richmond, VA 23224",
     },
@@ -94,9 +94,22 @@ db.once("open", async () => {
       // time: '6:00 pm',
       // date: '2021-08-27',
       date: "8/27/2021, 6:00:00 PM",
-      link: "https://artworksrva.com/blog/events/james-river-renderings/",
+      link: "https://artworksrva.com/blog/events/cathy-cazares-2/",
       locationName: "Art Works",
       locationAddress: "320 Hull St, Richmond, VA 23224",
+    },
+
+    {
+      name: "'Sirena's Gallery' Film Screening at the Byrd Theatre",
+      category: categories[3]._id,
+      description:
+        "Live feature film screening about a Salvadoran-American woman and her difficulties as an art gallery owner whose husband recently took his own life. Tickets $10.",
+      imageLink:
+        "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F136118449%2F195910722160%2F1%2Foriginal.20210521-024754?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C77%2C2556%2C1278&s=d942db5d9a26a036c071e7a1a7ab488f",
+      date: "8/27/2021, 7:00:00 PM",
+      link: "https://www.eventbrite.com/e/sirenas-gallery-feature-film-screening-at-the-byrd-theatre-tickets-156194946289?aff=ebdssbdestsearch",
+      locationName: "The Byrd Theatre",
+      locationAddress: "2908 West Cary Street, Richmond, VA 23221",
     },
     {
       name: "Death of an Iceberg - Exhibit Opening",
@@ -106,13 +119,13 @@ db.once("open", async () => {
       imageLink:
         "https://artworksrva.com/wp-content/uploads/2020/12/2021.08-Heidi-Nunnally-Death-of-an-Iceberg-Heidi-M.-Nunnally.jpg",
       // startDate: '6pm',
-      // endDate: '8pm',
+      // endDate: '9pm',
       // time: '6:00 pm',
-      // date: '2021-08-27',
-      date: "8/27/2021, 6:00:00 PM",
-      link: "https://artworksrva.com/blog/events/heidi-nunnally/",
-      locationName: "Art Works",
-      locationAddress: "320 Hull St, Richmond, VA 23224",
+      // date: '2021-09-17',
+      date: "9/17/2021, 6:00:00 PM",
+      link: "https://www.crossroadsartcenter.com/pages/exhibitions",
+      locationName: "Crossroads Art Center",
+      locationAddress: "2016 Staples Mill Rd, Richmond, VA 23230",
     },
     {
       name: "Faces and City Lights - Exhibit Opening",
@@ -122,13 +135,25 @@ db.once("open", async () => {
       imageLink:
         "https://artworksrva.com/wp-content/uploads/2020/12/2021.08-Cathy-Cazares2.jpeg",
       // startDate: '6pm',
-      // endDate: '8pm',
+      // endDate: '9pm',
       // time: '6:00 pm',
-      // date: '2021-08-27',
-      date: "8/27/2021, 6:00:00 PM",
-      link: "https://artworksrva.com/blog/events/cathy-cazares-2/",
-      locationName: "Art Works",
-      locationAddress: "320 Hull St, Richmond, VA 23224",
+      // date: '2021-11-19',
+      date: "11/11/2021, 6:00:00 PM",
+      link: "https://www.crossroadsartcenter.com/pages/exhibitions",
+      locationName: "Crossroads Art Center",
+      locationAddress: "2016 Staples Mill Rd, Richmond, VA 23230",
+    },
+    {
+      name: "Richmond RVA Exotic Paintings: BYOB Paint & Sip",
+      category: categories[2]._id,
+      description:
+        "Instructional painting event with live models. BYOB. Tickets sold for $35, includes 8x10 canvas, painting supplies, and instructor's guidance",
+      imageLink:
+        "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F108746661%2F70074178483%2F1%2Foriginal.20200817-105025?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C179%2C524%2C262&s=6e28dbc1944d4fd541030ac8ea4a0db2",
+      date: "11/27/2021, 7:00:00 PM",
+      link: "https://www.eventbrite.com/e/richmond-rva-exotic-paintings-byob-paint-sip-tickets-52795985213?aff=ebdssbdestsearch",
+      locationName: "Venue 065",
+      locationAddress: "3056 Hull Street, Richmond, VA 23224",
     },
 
     {
@@ -214,7 +239,6 @@ db.once("open", async () => {
       locationName: "Crossroads Art Center",
       locationAddress: "2016 Staples Mill Rd, Richmond, VA 23230",
     },
-  
   ]);
 
   console.log("Events successfully seeded!");
