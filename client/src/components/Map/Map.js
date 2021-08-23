@@ -28,5 +28,20 @@ function Map() {
 
 export default Map;
 
+// // function to plot seed data on map
+//  function plotSeedData(map, seedData) {
+
+
+//   // create a new layer for seed data
+//   const layer = new mapboxgl.GeoJSONLayer(seedData);
+
+//   // add the layer to the map
+//   map.addLayer(layer);
+
+//   // add a popup for seed data
+//   map.on('click', function(e) {
+//     layer.setFilter('!within', e.point);
+//   });
+//  }
 
 

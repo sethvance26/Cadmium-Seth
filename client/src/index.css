@@ -52,6 +52,21 @@ body {
   width: 200px;
 }
 
+/*make form monile responsive*/
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-group-sm {
+  width: 100%;
+
+
+}
+.form-control {
+  width: 100%;
+}
+
+
 .form-container {
   margin-top: 75px;
   display: flex;
@@ -67,6 +82,7 @@ body {
   justify-content: center;
   color: white;
   right: -330px;
+
 }
 
 .sign-in-buttons{
