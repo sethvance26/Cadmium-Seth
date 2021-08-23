@@ -1,6 +1,9 @@
 import * as React from "react";
 import { useState } from "react";
-import ReactMapGL from "react-map-gl";
+import ReactMapGL, {Marker} from "react-map-gl";
+import icon from "../../images/icon.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function Map() {
   const [viewport, setViewport] = useState({
@@ -21,7 +24,15 @@ function Map() {
       {...viewport}
       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
-    />
+    >
+      <Marker latitude={37.54} longitude={-77.433} offsetLeft={-20} offsetTop={-10}>
+        <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+      </Marker>
+      <Marker latitude={37.52} longitude={-77.423} offsetLeft={-20} offsetTop={-10}>
+        <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+      </Marker>
+
+    </ReactMapGL>
     </div>
   );
 }
