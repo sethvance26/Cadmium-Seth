@@ -68,7 +68,7 @@ body {
 
 
 .form-container {
-  margin-top: 75px;
+  /* margin-top: 75px;
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -81,9 +81,21 @@ body {
   opacity: 0.9;
   justify-content: center;
   color: white;
-  right: -330px;
-
+  right: -330px; */
+  margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #e30022;
+    max-width: 1250px;
+    position: relative;
+    border-radius: 20px 20px;
+    color: white;
+    right: -330px;
 }
+
+
 
 .sign-in-buttons{
   display: flex;
