@@ -52,6 +52,21 @@ body {
   width: 200px;
 }
 
+/*make form monile responsive*/
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-group-sm {
+  width: 100%;
+
+
+}
+.form-control {
+  width: 100%;
+}
+
+
 .form-container {
   margin-top: 75px;
   display: flex;
@@ -67,6 +82,7 @@ body {
   justify-content: center;
   color: white;
   right: -330px;
+
 }
 
 .sign-in-buttons{
@@ -259,7 +275,20 @@ input:focus {
 }
 
 
-
+.map{
+  width: 100%;
+  height: 100%;
+  background-color: #7a7374;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  
+}
 .fix-margin{
   margin: auto;
 }
@@ -300,6 +329,20 @@ input:focus {
 .card {
   width: 100%;
   text-align: center;
+
+
+}
+
+.card-image{
+  width: 50%;
+
+  /* height: 100%; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7a7374;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+
 }
 
 .error-text {
