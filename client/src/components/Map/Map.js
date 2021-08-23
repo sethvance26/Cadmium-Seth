@@ -1,9 +1,15 @@
 import * as React from "react";
 import { useState } from "react";
-import ReactMapGL, {Marker} from "react-map-gl";
+import ReactMapGL, {Marker, GeolocateControl} from "react-map-gl";
 import icon from "../../images/icon.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+
+const geolocateControlStyle= {
+  right: 10,
+  top: 10
+};
+
 
 function Map() {
   const [viewport, setViewport] = useState({
@@ -22,9 +28,16 @@ function Map() {
     <div className="map">
     <ReactMapGL
       {...viewport}
+      mapStyle="mapbox://styles/sethjordan/cksp5cw0p3qa617o16altodwy"
       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
     >
+      <GeolocateControl
+        style={geolocateControlStyle}
+        positionOptions={{enableHighAccuracy: true}}
+        trackUserLocation={true}
+        auto
+      />
       <Marker latitude={37.60195} longitude={-77.56721} offsetLeft={-20} offsetTop={-10}>
         <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
         <p>Paint N' Sip (8/26) </p>
