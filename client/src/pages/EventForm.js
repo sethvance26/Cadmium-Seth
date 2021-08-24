@@ -3,6 +3,7 @@ import { useMutation } from "@apollo/client";
 // import Auth from '../utils/auth';
 import { ADD_EVENT } from "../utils/mutations";
 import { useHistory } from "react-router-dom";
+import image from "../images/cadmium-images/logo.png"
 // import Image from "../images/cadmium-images/logo.png";
 
 import {
@@ -23,7 +24,9 @@ const styles = {
     textAlign: "center",
     fontFamily: "Rajdhani",
     fontSize: "50px",
+    paddingTop: "50px",
     paddingBottom: "50px",
+    color: "#ffffff"
   },
   listStyle: {
     listStyleType: "none",
@@ -87,16 +90,16 @@ function FormExampleFieldControl() {
     }
   };
   return (
+    <div>
+       <center>
+        <img src={image} alt="logo" className="img-logo" />
+      </center>
+      <div className="form-wrapper">
     <div className="form-container">
-      {/* <h1>
-        <center>
-          <img src={Image} alt="logo" />
-        </center>
-      </h1> */}
       <Form onSubmit={handleFormSubmit}>
         <div className="form-margin-style">
-          <h1 style={styles.titleStyle}>Add Your Art Event Here!</h1>
-          <Form.Group widths="equal" className="form-text">
+          <h1 style={styles.titleStyle} className="headerStuff">Add Your Art Event Here!</h1>
+          <Form.Group className="form-text">
             <Form.Field
               onChange={(e) => {
                 handleChange(e);
@@ -105,7 +108,10 @@ function FormExampleFieldControl() {
               name="name"
               label="Event Name"
               placeholder="Event Name"
+              width={15}
             />
+            </Form.Group>
+            <Form.Group>
             <Form.Field
               onChange={(e) => {
                 handleChange(e);
@@ -114,7 +120,10 @@ function FormExampleFieldControl() {
               name="locationName"
               label="Location Name"
               placeholder="Location Name"
+              width={15}
             />
+            </Form.Group>
+            <Form.Group>
             <Form.Field
               onChange={(e) => {
                 handleChange(e);
@@ -125,10 +134,12 @@ function FormExampleFieldControl() {
               options={options}
               placeholder="Event Type"
               className="form-text"
+              width={15}
             />
           </Form.Group>
           <Form.Group>
             <Form.Input
+              className="form-inputs"
               onChange={(e) => {
                 handleChange(e);
               }}
@@ -137,40 +148,48 @@ function FormExampleFieldControl() {
               placeholder="Enter a Location"
               width={15}
             />
+            </Form.Group>
+            <Form.Group>
             <Form.Input
+            className="form-inputs"
               onChange={(e) => {
                 handleChange(e);
               }}
               name="address2"
               label="Address"
-              width={8}
+              width={15}
             />
+            </Form.Group>
+            <Form.Group widths={15}>
             <Form.Input
+            className="form-inputs"
               onChange={(e) => {
                 handleChange(e);
               }}
               name="city"
               label="City"
               placeholder="City"
-              width={15}
+              
             />
             <Form.Input
+            className="form-inputs"
               onChange={(e) => {
                 handleChange(e);
               }}
               name="state"
               label="State"
               placeholder="State"
-              width={10}
+              
             />
             <Form.Input
+            className="form-inputs"
               onChange={(e) => {
                 handleChange(e);
               }}
               name="zip"
               label="Zip"
               placeholder="Zip"
-              width={10}
+              
             />
           </Form.Group>
           <Form.Group>
@@ -186,29 +205,32 @@ function FormExampleFieldControl() {
                 showTimeSelect
                 className="date-picker"
                 dateFormat="MMMM d, yyyy h:mm"
+                
               />
             </Form.Field>
           </Form.Group>
           <Form.Group>
             <Form.Input
+             className="form-inputs"
               onChange={(e) => {
                 handleChange(e);
               }}
               name="link"
               label="Link"
               placeholder="Link"
-              width={12}
+              width={15}
             />
           </Form.Group>
           <Form.Group>
             <Form.Input
+            className="form-inputs"
               onChange={(e) => {
                 handleChange(e);
               }}
               name="imageLink"
               label="Image Link"
               placeholder="Image Link"
-              width={12}
+              width={15}
             />
           </Form.Group>
           <Form.Field
@@ -219,12 +241,15 @@ function FormExampleFieldControl() {
             control={TextArea}
             label="Event Description"
             placeholder="Tell us more about your event..."
+            width={15}
           />
           <Form.Field control={Button} type="submit">
             Submit
           </Form.Field>
-        </div>
+      </div>
       </Form>
+    </div>
+    </div>
     </div>
   );
 }

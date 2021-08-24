@@ -62,8 +62,20 @@ body {
   width: 100%;
 }
 
+.form-wrapper {
+  
+}
+
+
 .form-container {
- margin-top: 75px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: static;
+  border-radius: 20px 20px !important;
+  padding-bottom: 5vh;
+  
+ /* margin-top: 75px;
   display: flex;
   justify-content: center;
   padding-top: 50px;
@@ -72,12 +84,12 @@ body {
   max-width: 1250px;
   max-height: 800px;
   position: relative;
-  border-radius: 20px 20px;
+ 
   opacity: 0.9;
   justify-content: center;
   color: white;
   right: -330px;
-  padding-bottom: 800px;
+  padding-bottom: 800px; */
 
 }
 
@@ -192,7 +204,7 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 70%;
 }
 
 input {
@@ -218,6 +230,7 @@ input:focus {
   max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 20vh;
 }
 
 .flex-row {
@@ -261,6 +274,24 @@ input:focus {
   justify-content: center;
   color: #fafafa;
   right: 450px;
+}
+
+.img-logo {
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+
+/* Add an event form container styling */
+
+.form-margin-style {
+  background-color: #e30022;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-radius: 20px 20px !important;
+}
+
+.form-inputs {
+  /* width: 9.7vw; */
 }
 
 .home-button {
@@ -369,3 +400,18 @@ input:focus {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 418px) {
+  .headerStuff {
+    font-size: 35px !important;
+  }
+
+  .container {
+    padding-top: 8vh;
+  }
+
+  .home-button {
+    padding-bottom: 3.5vh;
+  }
+}
+
