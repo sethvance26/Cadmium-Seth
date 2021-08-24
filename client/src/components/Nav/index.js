@@ -17,6 +17,9 @@ function Nav() {
           <li className="nav-items-style">
             <Link to="/map">Map Your Events!</Link>
           </li>
+          <li className="nav-items-style">
+            <Link to="/profile">My Profile</Link>
+          </li>
           <li className="mx-1 nav-items-style">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <Link to="/" onClick={() => Auth.logout()}>
