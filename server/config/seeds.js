@@ -35,18 +35,6 @@ db.once("open", async () => {
 
   const events = await Event.insertMany([
     {
-      name: "Jess Perlitz - Being Carrier Bag",
-      category: categories[2]._id,
-      description:
-        "Drawing on Ursula K. Le Guin's 1986 essay, The Carrier Bag Theory of Fiction, Perlitz explors the forms of the body as narrative.",
-      imageLink:
-        "https://images.squarespace-cdn.com/content/v1/533dc02de4b0e277ef5c5244/1592944521512-I7QB3Z2Z42CFHGW2OBMK/barely+there_thumbnail.jpg?format=500w",
-      date: "9/3/2021, 5:00:00 PM",
-      link: "https://arts.vcu.edu/event/jess-perlitz-being-carrier-bag/",
-      locationName: "The Anderson Gallery",
-      locationAddress: "907 1/2 Franklin Street, Richmond, VA 23220",
-    },
-    {
       name: "Paint Night w/ artist",
       category: categories[2]._id,
       description:
@@ -81,7 +69,6 @@ db.once("open", async () => {
       category: categories[0]._id,
       description:
         "Opening of several exhibits: James River Renderings 2021, Death of an Iceberg.",
-      // NO IMAGE
       imageLink:
         "https://artworksrva.com/wp-content/uploads/2020/12/3-Award-HaynesJames-Incoming-Transmission-17x30-Acrylic-800x1417.jpg",
       // startDate: '6pm',
@@ -89,7 +76,7 @@ db.once("open", async () => {
       // time: '6:00 pm',
       // date: '2021-08-27',
       date: "8/27/2021, 6:00:00 PM",
-      link: "https://artworksrva.com/blog/events/heidi-nunnally/",
+      link: "https://artworksrva.com/blog/events/all-media-art-show-9/",
       locationName: "Art Works",
       locationAddress: "320 Hull St, Richmond, VA 23224",
     },
@@ -106,7 +93,7 @@ db.once("open", async () => {
       // time: '6:00 pm',
       // date: '2021-08-27',
       date: "8/27/2021, 6:00:00 PM",
-      link: "https://artworksrva.com/blog/events/cathy-cazares-2/",
+      link: "https://artworksrva.com/blog/events/james-river-renderings/",
       locationName: "Art Works",
       locationAddress: "320 Hull St, Richmond, VA 23224",
     },
@@ -134,6 +121,18 @@ db.once("open", async () => {
       link: "https://edenairlines.com/upcoming-exhibition",
       locationName: "Eden Airlines",
       locationAddress: "214 E Grace Street, Richmond, VA 23219",
+    },
+    {
+      name: "Jess Perlitz - Being Carrier Bag",
+      category: categories[2]._id,
+      description:
+        "Drawing on Ursula K. Le Guin's 1986 essay, The Carrier Bag Theory of Fiction, Perlitz explors the forms of the body as narrative.",
+      imageLink:
+        "https://images.squarespace-cdn.com/content/v1/533dc02de4b0e277ef5c5244/1592944521512-I7QB3Z2Z42CFHGW2OBMK/barely+there_thumbnail.jpg?format=500w",
+      date: "9/3/2021, 5:00:00 PM",
+      link: "https://arts.vcu.edu/event/jess-perlitz-being-carrier-bag/",
+      locationName: "The Anderson Gallery",
+      locationAddress: "907 1/2 Franklin Street, Richmond, VA 23220",
     },
     {
       name: "Art n' Flow: Black Art Showcase",
@@ -185,9 +184,9 @@ db.once("open", async () => {
       // time: '6:00 pm',
       // date: '2021-09-17',
       date: "9/17/2021, 6:00:00 PM",
-      link: "https://www.crossroadsartcenter.com/pages/exhibitions",
-      locationName: "Crossroads Art Center",
-      locationAddress: "2016 Staples Mill Rd, Richmond, VA 23230",
+      link: "https://artworksrva.com/blog/events/heidi-nunnally/",
+      locationName: "Art Works",
+      locationAddress: "320 Hull Street, Richmond, VA 23224",
     },
     {
       name: "All Media Show Fall Opening Reception",
@@ -265,9 +264,9 @@ db.once("open", async () => {
       // time: '6:00 pm',
       // date: '2021-11-19',
       date: "11/11/2021, 6:00:00 PM",
-      link: "https://www.crossroadsartcenter.com/pages/exhibitions",
-      locationName: "Crossroads Art Center",
-      locationAddress: "2016 Staples Mill Rd, Richmond, VA 23230",
+      link: "https://artworksrva.com/blog/events/cathy-cazares-2/",
+      locationName: "Art Works",
+      locationAddress: "320 Hull Street, Richmond, VA 23224",
     },
     {
       name: "Richmond RVA Exotic Paintings",

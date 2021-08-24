@@ -7,7 +7,7 @@ import { QUERY_EVENTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
 import { Card, Icon, Image } from "semantic-ui-react";
-// import image from "../../images/cadmium-images/logo.png";
+import image from "../../images/cadmium-images/logo.png";
 import style from "./list.css";
 import {
   FacebookShareButton,
@@ -46,6 +46,12 @@ const styles = {
     textAlign: "center",
     fontFamily: "Rajdhani",
     fontSize: "50px",
+    backgroundColor: "#e30022",
+    marginTop: "3rem",
+    marginBottom: "3rem",
+    borderRadius: "20px 20px",
+    opacity: "0.8",
+    color: "white",
   },
   listStyle: {
     listStyleType: "none",
@@ -65,6 +71,9 @@ function EventList() {
 
   return (
     <div className="evt-cards">
+      <center>
+        <img src={image} alt="logo" className="img-logo" />
+      </center>
       <h2 style={styles.headerStyle}>Check out these upcoming events!</h2>
 
       {events ? (
@@ -85,7 +94,9 @@ function EventList() {
             <div className="card card-1">
               <Card style={{ width: "18rem" }}>
                 <Card.Content>
-                  <Card.Header href={link} target="_blank">{name}</Card.Header>
+                  <Card.Header href={link} target="_blank">
+                    {name}
+                  </Card.Header>
                   <Card.Meta>{locationName}</Card.Meta>
                   <Image src={imageLink} className="medium card-image" />
                   <Card.Description>{description}</Card.Description>

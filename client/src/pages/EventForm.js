@@ -3,6 +3,7 @@ import { useMutation } from "@apollo/client";
 // import Auth from '../utils/auth';
 import { ADD_EVENT } from "../utils/mutations";
 import { useHistory } from "react-router-dom";
+// import Image from "../images/cadmium-images/logo.png";
 
 import {
   Button,
@@ -87,8 +88,13 @@ function FormExampleFieldControl() {
   };
   return (
     <div className="form-container">
+      {/* <h1>
+        <center>
+          <img src={Image} alt="logo" />
+        </center>
+      </h1> */}
       <Form onSubmit={handleFormSubmit}>
-        <div  className="form-margin-style">
+        <div className="form-margin-style">
           <h1 style={styles.titleStyle}>Add Your Art Event Here!</h1>
           <Form.Group widths="equal" className="form-text">
             <Form.Field
