@@ -4,6 +4,23 @@ import ReactMapGL, {Marker, GeolocateControl} from "react-map-gl";
 import icon from "../../images/icon.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import image from "../../images/cadmium-images/logo.png";
+
+
+const styles = {  
+
+mapText: {  
+ 
+  fontWeight: '50px',
+  backgroundColor: '#e30022',
+  borderRadius: '20px 20px',
+  padding: '10px',
+  opacity: '0.8',
+  color: 'white',
+
+
+}
+}
 
 const geolocateControlStyle= {
   right: 10,
@@ -26,6 +43,9 @@ function Map() {
 
   return (
     <div className="map">
+      <center>
+        <img src={image} alt="logo" className="img-logo-map" />
+      </center>
     <ReactMapGL
       {...viewport}
       mapStyle="mapbox://styles/sethjordan/cksp5cw0p3qa617o16altodwy"
@@ -40,33 +60,49 @@ function Map() {
       />
       <Marker latitude={37.60195} longitude={-77.56721} offsetLeft={-20} offsetTop={-10}>
         <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-        <p>Paint N' Sip (8/26) </p>
+        <p style={styles.mapText}>Paint N' Sip (8/26) </p>
       </Marker>
       <Marker latitude={37.75857} longitude={-77.48118} offsetLeft={-20} offsetTop={-10}>
         <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-        <p>Fourth Fridays (8/27) </p>
+        <p style={styles.mapText}>Ashland Fourth Fridays (8/27) </p>
       </Marker>
       <Marker latitude={37.52539} longitude={-77.43718} offsetLeft={-20} offsetTop={-10}>
         <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-        <p>Dog Days of Summer (8/27) </p>
+        <p style={styles.mapText}>Art Works: 4th Friday Art Shows (8/27) </p>
       </Marker>
       <Marker latitude={37.55262} longitude={-77.47776} offsetLeft={-20} offsetTop={-10}>
         <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-        <p>Sirena's Gallery (8/27) </p>
+        <p style={styles.mapText}>The Byrd Theatre: Sirena's Gallery (8/27) </p>
       </Marker>
       <Marker latitude={37.53827} longitude={-77.44100}>
         <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-        <p>Art N' Flow (9/04) </p>
+        <p style={styles.mapText}>Delta Hotel: Art n'Flow (9/04) </p>
       </Marker>
-      <Marker latitude={37.50926} longitude={-77.46229}>
+      <Marker latitude={37.543755} longitude={-77.439978}>
         <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-        <p>RVA Exotic Paintings (9/12) </p> 
+        <p style={styles.mapText}>Eden Airlines: Blossom (8/27) </p> 
       </Marker>
       <Marker latitude={37.58512} longitude={-77.49300}>
         <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
-        <p>All Media Show (9/17) </p> 
-       
+        <p style={styles.mapText}>Crossroads Art Center: All Media Show (9/17) </p> 
       </Marker>
+      <Marker latitude={37.556316} longitude={-77.474146}>
+        <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+        <p style={styles.mapText}>VMFA: Ansel Adams (9/25) </p> 
+      </Marker>
+      
+      <Marker latitude={37.548953} longitude={-77.447464}>
+        <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+        <p style={styles.mapText}>ICA: Kutunza Kila Mmoja (10/10) </p> 
+      </Marker>
+      <Marker latitude={37.549118} longitude={-77.453000}>
+        <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+        <p style={styles.mapText}>The Anderson Gallery: Jess Perlitz (9/3) </p> 
+      </Marker>
+      {/* <Marker latitude={37.549118} longitude={-77.453000}>
+        <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+        <p style={styles.mapText}>Reynolds Gallery: Nancy Blum and Joseph Scheer (9/10) </p> 
+      </Marker> */}
       
 
     </ReactMapGL>
