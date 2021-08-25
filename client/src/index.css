@@ -22,6 +22,11 @@ html {
   background-attachment: fixed;
 }
 
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('./fonts/Rajdhani-Regular.ttf') format('truetype'); 
+}
+
 body {
   margin: 0;
   padding: 0;
