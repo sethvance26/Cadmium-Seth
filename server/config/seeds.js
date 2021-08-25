@@ -268,18 +268,6 @@ db.once("open", async () => {
       locationName: "Art Works",
       locationAddress: "320 Hull Street, Richmond, VA 23224",
     },
-    {
-      name: "Richmond RVA Exotic Paintings",
-      category: categories[2]._id,
-      description:
-        "Instructional painting event with live models. BYOB. Tickets sold for $35, includes 8x10 canvas, painting supplies.",
-      imageLink:
-        "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F108746661%2F70074178483%2F1%2Foriginal.20200817-105025?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C179%2C524%2C262&s=6e28dbc1944d4fd541030ac8ea4a0db2",
-      date: "11/27/2021, 7:00:00 PM",
-      link: "https://www.eventbrite.com/e/richmond-rva-exotic-paintings-byob-paint-sip-tickets-52795985213?aff=ebdssbdestsearch",
-      locationName: "Venue 065",
-      locationAddress: "3056 Hull Street, Richmond, VA 23224",
-    },
   ]);
 
   console.log("Events successfully seeded!");
