@@ -28,6 +28,9 @@ import OrderHistory from "./pages/OrderHistory";
 import Map from "./components/Map/Map";
 import background from "../src/images/GalleryImage2.jpg";
 import EventList from "./components/ProductList/index";
+import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2V0aGpvcmRhbiIsImEiOiJja3JtZGdvb3E3c2xvMnVsMzI2MWk5OGgyIn0.y7gSlBMmwPnOMB5PzKaJ5w';
 
 const httpLink = createHttpLink({
   uri: "/graphql",
