@@ -4,7 +4,7 @@
 
 This application presents the user with listings by date of art events happening in Richmond, VA. The user will be able to create their own event postings, but they will be required to login or create an account before doing so. Users are also be able to email the event links to themselves or a friend, as well as share accross an array of social media platforms.
 
-Future functionality: Users are able to save a personal list of events with the option to print, email, share on social media, or plot on a map.
+Future functionality: Users are able to save a personal list of events with the option to print, email, share on social media, or plot on a map..
 
 ## Table of Contents
 
