@@ -13,9 +13,14 @@ Future functionality: Users are able to save a personal list of events with the 
 3. [Acceptance Criteria](#Acceptance-Criteria)
 4. [Application Requirements](#Application-Requirements)
 5. [Mock Up](#Mock-Up)
-6. [Usage](#Usage)
-7. [Contact](#Contact)
-8. [License](#License)
+6. [Heroku Link](#Heroku-Link)
+7. [Usage](#Usage)
+8. [Contact](#Contact)
+9. [License](#License)
+
+## Deployed Link
+
+[Deployed Application]https://cadmiumrva.herokuapp.com/
 
 ## Technologies Used
 
@@ -116,7 +121,7 @@ The following photos provide a mock-up of the application:
 
 The following link leads to the deployed application on Heroku:
 
-[Heroku Link](https://cadmiumrva.herokuapp.com/)
+[Deployed Link](https://cadmiumrva.herokuapp.com/)
 
 ## Usage
 
