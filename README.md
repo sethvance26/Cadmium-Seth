@@ -20,7 +20,7 @@ Future functionality: Users are able to save a personal list of events with the 
 
 ## Deployed Link
 
-[Deployed Application]https://cadmiumrva.herokuapp.com/
+[Deployed Application](https://cadmiumrva.herokuapp.com/)
 
 ## Technologies Used
 
